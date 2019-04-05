@@ -1,0 +1,138 @@
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+.remove-right-padding {
+    padding-right: 0px;
+}
+
+
+.pagination {
+  text-decoration: none;
+  display: block;
+  margin: 0 -20px 0 -20px;
+  padding: 20px;
+
+  .next-link {
+    font-weight: 700;
+    margin-left: 10px;
+  }
+
+  .whats-next-link {
+    margin-left: 30px;
+    text-decoration: underline;
+    // display: block;
+  }
+
+}
+
+.pagination:hover {
+  color: $govuk-link-colour;
+  background-color: govuk-colour("grey-4");
+
+}
+
+.pagination:visited {
+  color: $govuk-link-colour;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+
+  .govuk-heading-m {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 641px) {
+.sticky-side-bar {
+  position: sticky;
+  top: 0;
+  top: 15px;
+  padding: 12px;
+  background-color: govuk-colour("grey-4");
+
+  a:visited {
+    color: $govuk-link-colour;
+  }
+}
+}
+
+.stuck {
+  // display: block;
+  padding: 10px;
+  background-color: govuk-colour("grey-4");
+  opacity: .9;
+  margin-bottom: 10px;
+  // position: fixed;
+  // top: 0px;
+  // left: 0px;
+  // width: 100%;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // background-color: govuk-colour("grey-3");
+  // opacity: .9;
+
+
+
+  h2 {
+    @extend .govuk-width-container;
+  }
+}
+
+#nav li a.active {
+  font-weight: 700;
+}
+
+#errorSummary.hidden {
+  display: none;
+}
+
+#nationality-error.hidden {
+  display: none;
+}
+
+.interruption-card {
+    background: #005ea5;
+    color: #fff;
+    margin: 30px 0;
+    padding: 20px;
+
+}
+
+@media (min-width: 769px){
+.interruption-card, .report-data-figures {
+    margin-top: 1.25em;
+    padding: 30px;
+    padding-bottom: 12px;
+}
+
+}
+
+.bold-xlarge {
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 32px;
+    line-height: 1.09375;
+}
+
+@media (min-width: 641px) {
+.bold-xlarge {
+    font-size: 48px;
+    line-height: 1.04167;
+}
+}
+
+.govuk-body-white {   color: #fff; }
+
+.mt15 {    margin-top: 15px;
+   }
+
+.ml5 {margin-left:5px;}
+
+#updateFigures {
+
+    color: govuk-colour("blue") ;
+
+}

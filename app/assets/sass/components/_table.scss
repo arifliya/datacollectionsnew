@@ -1,0 +1,46 @@
+.govuk-table--allborders {
+	width: 100%;
+	table-layout: fixed;	
+}
+
+.govuk-table--allborders th,
+.govuk-table--allborders td {
+	border: solid 1px $govuk-border-colour;
+   	height: 60px;
+   	font-size: 14px;
+   	line-height: 1.1111;
+   	vertical-align: top;
+   	width: 20%;
+   	padding-left: 10px;
+
+   	&:last-child {
+    	padding-right: 20px;
+	}
+}
+
+.govuk-table--noinputborders {
+   	td {
+      	.govuk-form-group {
+	     	margin: 12px auto 0;
+	     	vertical-align: middle;
+
+		  	input {
+				border-color: transparent;
+				padding-left: 0;
+				margin-left: -5px;
+				font-size: 27px;
+				font-weight: bold;
+				color: $govuk-secondary-text-colour;
+				text-align: right;
+			}
+		}
+   	}
+}
+
+.govuk-table__cell--noborder {
+   border-bottom: 0;
+}
+
+.govuk-table__cell--disabled {
+   background-color: govuk-colour("grey-3");
+}

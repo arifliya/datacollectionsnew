@@ -1,0 +1,18 @@
+.govuk-success-summary--border {
+    border-color:  govuk-colour("turquoise");
+}
+
+.govuk-cancelled-summary--border {
+    border-color:  govuk-colour("purple");
+}
+
+.govuk-info-summary {
+	display: inline-block;
+    border-color:  govuk-colour("grey-2");
+    border-width: 1px;
+}
+
+.govuk-info-summary--value {
+	color: govuk-colour("blue");
+	margin-bottom: 0;
+}
