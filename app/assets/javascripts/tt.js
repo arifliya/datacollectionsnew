@@ -68,5 +68,9 @@ window.onload = function() {
 
     $('#12').append(data[10].total);
 
+    if (data[0].banner == '1') {
+      $('.information-banner').removeClass('hidden');
+    }
+
     console.log(data);
   }

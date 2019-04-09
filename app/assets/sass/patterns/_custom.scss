@@ -383,7 +383,38 @@ progress::-moz-progress-bar { background: white; }
   }
 }
 
+.information-banner.hidden {
+  display: none;
+}
+
 .information-banner {
   @extend .govuk-error-summary;
   border-color: govuk-colour("purple");
+}
+
+
+@media (max-width: 641px) {
+  .date::before {
+    content: "Date:";
+  }
+
+  .type::before {
+    content: "Type:";
+  }
+
+  .file::before {
+    content: "File:";
+  }
+
+  .by::before {
+    content: "Submitted by:";
+  }
+
+  .reference::before {
+    content: "Reference:";
+  }
+
+  .reports::before {
+    content: "Reports:";
+  }
 }
