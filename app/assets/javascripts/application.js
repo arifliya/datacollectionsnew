@@ -92,7 +92,10 @@ $("#backLink").click(function(event) {
     history.back(1);
 });
 
-
+$('#redBorder').blur(function(){
+  $(this).addClass('govuk-input--error');
+  $('#cutomTableRow').addClass('show');
+});
 
 $(function() {
   $('.fig-edit1').on("input", function() {

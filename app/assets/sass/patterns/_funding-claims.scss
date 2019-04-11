@@ -136,3 +136,22 @@
     color: govuk-colour("blue") ;
 
 }
+
+#cutomTableRow {
+  display: none;
+
+  td {
+    border-bottom: 0;
+  }
+
+  .govuk-error-message {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+
+}
+
+#cutomTableRow.show {
+  display: table-row;
+}
