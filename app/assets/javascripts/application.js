@@ -49,6 +49,14 @@ $('#continue').click(function() {
 
 });
 
+
+$('#esfRound').click(function() {
+
+   if($('#round-1').is(':checked')) { location.href='esf_choose_file_to_upload'; }
+   if($('#round-2').is(':checked')) { location.href='esf_2_choose_file_to_upload'; }
+
+});
+
 // from myjquery file //
 
 $('.govuk-button').click(function() {
