@@ -25,6 +25,7 @@ window.onload = function() {
     //   tr.append("<td>" + data[i].amount + "</td>");
     //   $('#fill2').append(tr);
     // }
+    
 
     $('#a2').append(data[0].forecasted);
     $('#b2').append(data[0].delivery);

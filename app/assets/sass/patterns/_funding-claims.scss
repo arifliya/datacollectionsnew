@@ -45,25 +45,27 @@
 }
 
 @media (min-width: 641px) {
-.sticky-side-bar {
-  position: sticky;
-  top: 0;
-  top: 15px;
-  padding: 12px;
-  background-color: govuk-colour("grey-4");
+  .sticky-side-bar {
+    position: sticky;
+    top: 0;
+    top: 15px;
+    padding: 12px;
+    background-color: govuk-colour("grey-4");
 
-  a:visited {
-    color: $govuk-link-colour;
+    a:visited {
+      color: $govuk-link-colour;
+    }
   }
-}
 }
 
 .stuck {
   // display: block;
   padding: 10px;
-  background-color: govuk-colour("grey-4");
+  background-color: govuk-colour("white");
   opacity: .9;
   margin-bottom: 10px;
+  margin-left: -10px;
+    margin-right: -10px;
   // position: fixed;
   // top: 0px;
   // left: 0px;

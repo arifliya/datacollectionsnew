@@ -9,7 +9,6 @@ $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
 
-
 // ****************************   DATA COLLECTIONS BETA JS *********************************************//
 
 $("#typeFilter :checkbox").click(function() {
@@ -315,3 +314,24 @@ $window.scroll(function() {
         $('.sticky').removeClass('stuck');
     }
 });
+
+
+
+
+
+
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
