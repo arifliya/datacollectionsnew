@@ -1,30 +1,29 @@
-
-{% extends "./layout_noback_signedin.html" %}
-
+{% extends "layout.html" %}
 
 {% block pageTitle %}
-  Data Collections Transformation Prototype
+Your funding claims data
 {% endblock %}
 
+<!-- breadcrum goes here -->
+
 {% block content %}
-<script src="/public/javascripts/tt.js"></script>
 
 <div class="govuk-grid-row">
    <div class="govuk-grid-column-two-thirds">
 
-     <a href="what_data_do_you_want_to_submit" class="govuk-back-link">Back to submit another file</a>
+     <a href="../what_data_do_you_want_to_submit" class="govuk-back-link">Back to submit another file</a>
      <br>
      <br>
 
        <h1 class="govuk-heading-xl">Funding claim submissions</h1>
 
 
-        <p>You can view your ILR data in the <a href="return-period">reports section</a>.</p>
 
-        <br>
+
+
 
         <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-          <h2 class="govuk-heading-m">Final year 2018/19</h2>
+          <h2 class="govuk-heading-m">Year end 2018/19</h2>
           <div class="govuk-summary-list__row">
             <!-- <dt class="govuk-summary-list__key govuk-!-width-one-third">
               Funding claim
@@ -50,24 +49,6 @@
 
             <dd class="govuk-summary-list__actions">
               <a class="govuk-link" href="#">
-                View submission
-                <span class="govuk-visually-hidden"> contact information</span>
-              </a>
-            </dd>
-          </div>
-          <br>
-          <br>
-          <h2 class="govuk-heading-m">Year end 2018/19</h2>
-          <div class="govuk-summary-list__row">
-            <!-- <dt class="govuk-summary-list__key govuk-!-width-one-half">
-              Funding claim
-            </dt> -->
-            <dd class="govuk-summary-list__value">
-              Last submitted: 02 Jan 2018 at 4.43pm
-            </dd>
-
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="adult-submitted.html">
                 View submission
                 <span class="govuk-visually-hidden"> contact information</span>
               </a>
@@ -210,9 +191,9 @@
 <div class="govuk-grid-column-one-third">
 <aside class="interruption-card">
          <div class="data">
-    <span class="data-item bold-xlarge">4 days</span>
-    <p class="govuk-body-white">until <span class="govuk-!-font-weight-bold">year end closes</span> on Thursday 7 February at 6:00pm</p>
-  </div>
+		<span class="data-item bold-xlarge">4 days</span>
+		<p class="govuk-body-white">until <span class="govuk-!-font-weight-bold">year end closes</span> on Thursday 7 February at 6:00pm</p>
+	</div>
 </aside>
 </div>
 </div>
@@ -220,8 +201,7 @@
 
 <!-- <a href="year-end-claim-adult.html" role="button" class="govuk-button">Enter or confirm data</a> -->
 
-<p class="govuk-body"><a href="exit-survey.html" role="button" class="govuk-link">Log out</a></p>
-
+<p class="govuk-body"><a href="sign-in.html" role="button" class="govuk-link">Log out</a></p>
 
 
 {% endblock %}
