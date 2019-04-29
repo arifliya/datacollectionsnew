@@ -25,7 +25,17 @@ window.onload = function() {
     //   tr.append("<td>" + data[i].amount + "</td>");
     //   $('#fill2').append(tr);
     // }
-    
+    $('#bannerText').append(data[1].banner);
+    $('#bannerText2').append(data[2].banner);
+    $('#bannerText3').append(data[3].banner);
+    $('#bannerText4').append(data[4].banner);
+    $('#bannerText5').append(data[5].banner);
+    $('#bannerText6').append(data[6].banner);
+    $('#bannerText7').append(data[7].banner);
+    $('#bannerText8').append(data[8].banner);
+    $('#bannerText9').append(data[9].banner);
+    $('#bannerText10').append(data[10].banner);
+
 
     $('#a2').append(data[0].forecasted);
     $('#b2').append(data[0].delivery);
