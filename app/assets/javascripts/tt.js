@@ -36,6 +36,17 @@ window.onload = function() {
     $('#bannerText9').append(data[9].banner);
     $('#bannerText10').append(data[10].banner);
 
+    $('#bannerCont').append(data[1].context);
+    $('#bannerCont2').append(data[2].context);
+    $('#bannerCont3').append(data[3].context);
+    $('#bannerCont4').append(data[4].context);
+    $('#bannerCont5').append(data[5].context);
+    $('#bannerCont6').append(data[6].context);
+    $('#bannerCont7').append(data[7].context);
+    $('#bannerCont8').append(data[8].context);
+    $('#bannerCont9').append(data[9].context);
+    $('#bannerCont10').append(data[10].context);
+
 
     $('#a2').append(data[0].forecasted);
     $('#b2').append(data[0].delivery);
