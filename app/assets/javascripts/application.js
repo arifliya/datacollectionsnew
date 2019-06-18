@@ -33,6 +33,17 @@ $("#yearFilter :checkbox").click(function() {
     }
 });
 
+$("#qarfrmFilter :checkbox").click(function() {
+    $(".year-groups").hide();
+    $("#qarfrmFilter :checkbox:checked").each(function() {
+        $("." + $(this).val()).show();
+    });
+
+    if (!$("#qarfrmFilter :checkbox").is(':checked')) {
+      $(".year-groups").show();
+    }
+});
+
 $('.no-thank-you').click(function(){
   $('.feedback-wrapper').hide();
 });
@@ -41,7 +52,7 @@ $('.no-thank-you').click(function(){
 $('#continue').click(function() {
 
    if($('#what-to-submit-1').is(':checked')) { location.href='choose_period'; }
-   if($('#what-to-submit-2').is(':checked')) { location.href='eas_choose_file_to_upload'; }
+   if($('#what-to-submit-2').is(':checked')) { location.href='choose_eas'; }
 	 if($('#what-to-submit-3').is(':checked')) { location.href='choose_esf'; }
    if($('#what-to-submit-3a').is(':checked')) { location.href='edit-data'; }
    else if($('#what-to-submit-4').is(':checked')) { location.href='return-period'; }

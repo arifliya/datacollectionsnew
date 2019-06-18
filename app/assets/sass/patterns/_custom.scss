@@ -312,7 +312,7 @@ progress::-moz-progress-bar { background: white; }
 }
 
 
-#typeFilter.govuk-checkboxes, #yearFilter.govuk-checkboxes {
+#typeFilter.govuk-checkboxes, #yearFilter.govuk-checkboxes, #qarfrmFilter.govuk-checkboxes {
 	display: flex;
 
 	.govuk-checkboxes__item {
@@ -417,4 +417,9 @@ progress::-moz-progress-bar { background: white; }
   .reports::before {
     content: "Reports:";
   }
+}
+
+.grey-box {
+  background-color: govuk-colour("grey-3");
+  padding: 15px;
 }
