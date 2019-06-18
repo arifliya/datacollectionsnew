@@ -11,6 +11,8 @@ $(document).ready(function () {
 
 // ****************************   DATA COLLECTIONS BETA JS *********************************************//
 
+// ---------- last 3 months filters ------------ //
+
 $("#typeFilter :checkbox").click(function() {
     $("#submissions tr").hide();
     $("#typeFilter :checkbox:checked").each(function() {
@@ -21,6 +23,8 @@ $("#typeFilter :checkbox").click(function() {
       $("#submissions tr").show();
     }
 });
+
+// ---------- history filters ------------ //
 
 $("#yearFilter :checkbox").click(function() {
     $(".year-groups").hide();
@@ -33,14 +37,16 @@ $("#yearFilter :checkbox").click(function() {
     }
 });
 
+// ---------- qar frm filters ------------ //
+
 $("#qarfrmFilter :checkbox").click(function() {
-    $(".year-groups").hide();
+    $(".qf").hide();
     $("#qarfrmFilter :checkbox:checked").each(function() {
         $("." + $(this).val()).show();
     });
 
     if (!$("#qarfrmFilter :checkbox").is(':checked')) {
-      $(".year-groups").show();
+      $(".qf").show();
     }
 });
 
