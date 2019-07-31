@@ -1,0 +1,73 @@
+
+{% extends "./layout_backtowhat.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+
+		<form action="choose_file_to_upload" method="get" class="form">
+			<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+         What data do you want to view?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="submission-reports" name="whattosubmit" type="radio" value="ilr">
+        <label class="govuk-label govuk-radios__label" for="submission-reports">
+        Submission and history reports
+      </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="qar-frm-reports" name="whattosubmit" type="radio" value="eas">
+        <label class="govuk-label govuk-radios__label" for="qar-frm-reports">
+       QAR and FRM reports
+      </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="period-end-reports" name="whattosubmit" type="radio" value="esf">
+        <label class="govuk-label govuk-radios__label" for="period-end-reports">
+       Period end reports
+      </label>
+      </div>
+
+      <div class="govuk-radios__divider">or</div>
+         <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="understand-your-payments" name="whattosubmit" type="radio" value="reports">
+        <label class="govuk-label govuk-radios__label" for="understand-your-payments">
+          Understand your payments
+        </label>
+      </div>
+      </div>
+  </fieldset>
+			</div>
+<a href="#" id="continue2" class="govuk-button">
+  Continue
+</a>
+
+		</form>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+<script>
+
+</script>
+
+{% endblock %}

@@ -61,7 +61,18 @@ $('#continue').click(function() {
    if($('#what-to-submit-2').is(':checked')) { location.href='choose_eas'; }
 	 if($('#what-to-submit-3').is(':checked')) { location.href='choose_esf'; }
    if($('#what-to-submit-3a').is(':checked')) { location.href='edit-data'; }
+   if($('#what-to-submit-5').is(':checked')) { location.href='what_data_do_you_want_to_view'; }
    else if($('#what-to-submit-4').is(':checked')) { location.href='return-period'; }
+
+});
+
+$('#continue2').click(function() {
+
+  if($('#submission-reports').is(':checked')) { location.href='submission-reports'; }
+   if($('#qar-frm-reports').is(':checked')) { location.href='qar-frm-reports'; }
+   if($('#period-end-reports').is(':checked')) { location.href='period-end-reports'; }
+   else if($('#understand-your-payments').is(':checked')) { location.href='beta/summary/R01'; }
+
 
 });
 
