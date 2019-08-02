@@ -1,0 +1,92 @@
+
+{% extends "./layout_noback.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+  <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
+    Signed out
+  </h2>
+  <div class="govuk-highlight-summary__body">
+	  <p>You have successfully signed out.</p>
+  </div>
+</div>
+  </div>
+</div>	
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">		
+		
+  <h1 class="govuk-heading-xl">
+    Give feedback
+  </h1>
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h2 class="govuk-fieldset__heading">
+        Overall, how did you feel about the service you received today?
+      </h2>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="exit-survey-1" name="exit-survey" type="radio" value="Very satisfied">
+        <label class="govuk-label govuk-radios__label" for="exit-survey-1">
+          Very satisfied
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="exit-survey-2" name="exit-survey" type="radio" value="Satisfied">
+        <label class="govuk-label govuk-radios__label" for="exit-survey-2">
+          Satisfied
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="exit-survey-3" name="exit-survey" type="radio" value="Neither satisfied or dissatisfied">
+        <label class="govuk-label govuk-radios__label" for="exit-survey-3">
+          Neither satisfied or dissatisfied
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="exit-survey-4" name="exit-survey" type="radio" value="Dissatisfied">
+        <label class="govuk-label govuk-radios__label" for="exit-survey-4">
+          Dissatisfied
+        </label>
+      </div>
+      <div class="govuk-radios__divider">or</div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="exit-survey-6" name="exit-survey" type="radio" value="Very dissatisfied">
+        <label class="govuk-label govuk-radios__label" for="exit-survey-6">
+          Very dissatisfied
+        </label>
+      </div>
+    </div>
+  </fieldset>            
+</div>
+        <div class="govuk-form-group">
+  <label class="govuk-label" for="more-detail">
+      <h2 class="govuk-heading-m">How could we improve this service?</h2>
+  </label>
+  <span id="more-detail-hint" class="govuk-hint">
+   Please don't include any personal or financial information, for example your National Insurance or credit card numbers.
+  </span>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="8" aria-describedby="more-detail-hint"></textarea>
+</div>
+  <button type="submit" class="govuk-button">
+  Send feedback
+</button>
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        
+      </div>
+
+</div>
+
+{% endblock %}

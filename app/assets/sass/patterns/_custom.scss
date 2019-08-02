@@ -312,7 +312,7 @@ progress::-moz-progress-bar { background: white; }
 }
 
 
-#typeFilter.govuk-checkboxes, #yearFilter.govuk-checkboxes, #qarfrmFilter.govuk-checkboxes {
+#typeFilter.govuk-checkboxes, #yearFilter.govuk-checkboxes, #yearFilter-pe.govuk-checkboxes, #qarfrmFilter.govuk-checkboxes {
 	display: flex;
 
 	.govuk-checkboxes__item {
@@ -422,4 +422,140 @@ progress::-moz-progress-bar { background: white; }
 .grey-box {
   background-color: govuk-colour("grey-3");
   padding: 15px;
+}
+
+//******************************* NEW JOURNEY CSS *********************************//
+
+
+// a.get-started {
+//   display: block;
+//   width: auto;
+//   text-align: center;
+//   color: white;
+//   padding: 10px;
+//   background-color: $govuk-link-colour;
+//   margin-bottom: 36px;
+// }
+
+.tile-group {
+
+  .govuk-grid-column-one-third {
+    margin-bottom: 26px;
+
+    .warning-info {
+      background-color: govuk-colour("green");
+      color: white;
+      margin-top: 5px;
+      padding: 12px;
+    }
+  }
+
+  a {
+  display: block;
+  background-color: $govuk-link-colour;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  min-height: 89px;
+
+    .heading {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .sub-heading {
+      text-decoration: underline;
+    }
+
+  }
+
+  // a:hover {
+  //   text-decoration: underline;
+  // }
+
+  a:hover .heading {
+    opacity: 0.85;
+  }
+
+  a:hover .sub-heading {
+    opacity: 0.85;
+  }
+
+}
+
+.second-group {
+  a {
+    min-height: auto;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+@include govuk-media-query($from: 640) {
+  .flex {
+    flex-direction: row;
+  }
+}
+
+
+.report-view section {
+  display: none;
+}
+
+.report-view section.current {
+  display: inherit;
+}
+
+.left-navigation {
+
+  li {
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: $govuk-link-colour;
+    }
+  }
+
+
+}
+
+.app-back-to-top__icon {
+    display: inline-block;
+    width: .8em;
+    height: 1em;
+    margin-top: -5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 30px;
+  margin-bottom: 30px;
+}
+
+.govuk-grid-column-one-quarter {
+
+  // height: -webkit-fill-available;
+  .app-back-to-top__icon, a:visited {
+    color: $govuk-link-colour;
+  }
+}
+
+ul li.dashboard-link  {
+  margin-bottom: 10px;
+  a {
+    text-decoration: none;
+  }
 }

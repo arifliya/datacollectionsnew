@@ -37,6 +37,19 @@ $("#yearFilter :checkbox").click(function() {
     }
 });
 
+// ---------- period end filters ------------ //
+
+$("#yearFilter-pe :checkbox").click(function() {
+    $(".year-groups-pe").hide();
+    $("#yearFilter-pe :checkbox:checked").each(function() {
+        $("." + $(this).val()).show();
+    });
+
+    if (!$("#yearFilter-pe :checkbox").is(':checked')) {
+      $(".year-groups-pe").show();
+    }
+});
+
 // ---------- qar frm filters ------------ //
 
 $("#qarfrmFilter :checkbox").click(function() {
@@ -308,6 +321,25 @@ $('#confirmCheckBox').click(function(){
     $('#nationality-error').addClass('hidden');
   }
 });
+
+
+// $(".left-navigation li a").click(function(){
+//   $(".report-view section").hide();
+// });
+
+$(".left-navigation li a").click(function(e){
+		var tab_id = $(this).attr('data-tab');
+
+		$(".left-navigation li a").removeClass("govuk-!-font-weight-bold");
+		$(".report-view section").removeClass('current');
+
+		$(this).addClass("govuk-!-font-weight-bold");
+		$("#"+tab_id).addClass('current');
+
+    e.preventDefault();
+	});
+
+
 
 
 $(window).scroll(function() {
