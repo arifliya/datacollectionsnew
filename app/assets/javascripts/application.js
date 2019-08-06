@@ -15,12 +15,14 @@ $(document).ready(function () {
 
 $("#typeFilter :checkbox").click(function() {
     $("#submissions tr").hide();
+    $(".card").hide();
     $("#typeFilter :checkbox:checked").each(function() {
         $("." + $(this).val()).show();
     });
 
     if (!$("#typeFilter :checkbox").is(':checked')) {
       $("#submissions tr").show();
+      $(".card").show();
     }
 });
 

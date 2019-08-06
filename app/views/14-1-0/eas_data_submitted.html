@@ -1,9 +1,7 @@
 
-{% extends "./layout.html" %}
+{% extends "./layout_backtowhat.html" %}
 
-{% block beforeContent %}
-   {% include "./includes/back_what_data_do_you_want_to_submit.html" %}
-{% endblock %}
+
 
 {% block pageTitle %}
   Data Collections Transformation Prototype
@@ -42,8 +40,8 @@
       </div>
     </details>
 
-		<p><a class="govuk-button" href="./submission-reports.html">View reports page</a></p>
-		<p><a href="./what_data_do_you_want_to_submit.html">Submit another data return</a></p>
+		<p><a class="govuk-button" href="./return-period.html">View reports page</a></p>
+		<p><a href="./dashboard.html">Submit another data return</a></p>
     </div>
 	  <div class="govuk-grid-column-one-third">
         {% include "./includes/sidebar_help.html" %}
