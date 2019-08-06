@@ -494,6 +494,10 @@ progress::-moz-progress-bar { background: white; }
   flex-direction: column;
 }
 
+.flex.mobile {
+  flex-direction: row
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -503,7 +507,7 @@ progress::-moz-progress-bar { background: white; }
 }
 
 .custom-width {
-  width: 60%;
+  width: 65%;
   display: block;
 }
 
