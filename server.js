@@ -18,6 +18,7 @@ const authentication = require('./lib/middleware/authentication/authentication.j
 const config = require('./app/config.js')
 const documentationRoutes = require('./docs/documentation_routes.js')
 const packageJson = require('./package.json')
+const summaryData = require('./app/data/summary-data.json')
 const routes = require('./app/routes.js')
 const utils = require('./lib/utils.js')
 
@@ -56,6 +57,7 @@ var useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreDat
 var useCookieSessionStore = process.env.USE_COOKIE_SESSION_STORE || config.useCookieSessionStore
 var useHttps = process.env.USE_HTTPS || config.useHttps
 var gtmId = process.env.GOOGLE_TAG_MANAGER_TRACKING_ID
+const summaryContent = Object.assign(summaryData)
 
 useHttps = useHttps.toLowerCase()
 
@@ -178,6 +180,8 @@ app.locals.cookieText = config.cookieText
 app.locals.promoMode = promoMode
 app.locals.releaseVersion = 'v' + releaseVersion
 app.locals.serviceName = config.serviceName
+app.locals.summaryContent = summaryContent
+
 
 // Session uses service name to avoid clashes with other prototypes
 const sessionName = 'govuk-prototype-kit-' + (Buffer.from(config.serviceName, 'utf8')).toString('hex')

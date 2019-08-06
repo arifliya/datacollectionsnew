@@ -1,0 +1,13 @@
+[class*="inverse"]{
+  color: white;
+  .govuk-breadcrumbs__link:link, .govuk-breadcrumbs__link:visited, .govuk-breadcrumbs__link:hover, .govuk-breadcrumbs__link:active, .govuk-breadcrumbs__link:focus{
+    color: white;
+  }
+  .gem-c-breadcrumbs .govuk-breadcrumbs__list-item:before {
+    border-color: #ffffff;
+  }
+  background-color: #005ea5;
+}
+.govuk-inverse-header{
+  margin-top: -10px;
+}

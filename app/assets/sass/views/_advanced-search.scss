@@ -1,0 +1,37 @@
+// scss-lint:disable IdSelector
+#finder-frontend.advanced-search {
+  header {
+    margin: 0;
+    margin-bottom: govuk-spacing(9);
+  }
+
+  .taxon-link {
+    @include govuk-font(24, $weight: bold);
+  }
+
+  .pub-c-title {
+    margin-bottom: govuk-spacing(3);
+    margin-top: govuk-spacing(3);
+  }
+
+  .filtered-results {
+    .metadata-date-value {
+      @include govuk-font(14);
+    }
+
+    .result-info {
+      @include govuk-font(24);
+    }
+  }
+}
+
+.full-width #wrapper {
+  margin: 0;
+  max-width: 100%;
+  width: auto;
+}
+
+.full-width #global-header-bar {
+  display: none;
+}
+// scss-lint:enable IdSelector
