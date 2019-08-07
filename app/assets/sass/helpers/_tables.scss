@@ -1,0 +1,11 @@
+.totals-row{
+  padding-top: 1px;
+  td, th{
+    border-top: 2px solid;
+  }
+  &:last-child{
+    td, th{
+      border-top: 2px solid;
+    }
+  }
+}

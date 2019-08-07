@@ -1,0 +1,36 @@
+.table{
+  display: table;
+  width: 100%;
+  background-color: #eee;
+  border: 1px solid #666666;
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+  caption{
+  }
+  .table-body{
+  }
+  .table-head{
+  }
+  .theader{
+  }
+  .table-footer{
+
+  }
+  .table-row{
+    display: table-row;
+    width: 100%;
+    clear: both;
+  }
+  .row{
+    display: table-row;
+    width: 100%;
+    clear: both;
+  }
+
+}
+.cell{
+  float: left; /* fix for  buggy browsers */
+  display: table-column;
+  width: auto;
+  background-color: #ccc;
+  padding: 5px;
+}
