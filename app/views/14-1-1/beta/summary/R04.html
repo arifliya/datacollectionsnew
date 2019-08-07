@@ -44,22 +44,18 @@ GOV.UK Prototype Kit
             <div class="govuk-grid-column-full">
                 <h1 class="govuk-heading-xl">
                     R04 November 2018
-
-
                 </h1>
 
-                {% include "summary-parts/details.html" %}
-                {% include "summary-parts/heading-text.html" %}
+                {% include "./summary-parts/details.html" %}
+                {% include "./summary-parts/heading-text.html" %}
 
                 <h2 class="govuk-heading-m">
                     {{summaryContent.ytdTitle}}
                 </h2>
-                <p> This shows you a year to date total of what your apprenticeship earnings were at this point in the
-                    funding year, based on your learner data submissions – including the proportion of those earnings we
-                    planned to pay you and the total amount of co-investment collected up to that date.
-                </p>
+                {% include "./summary-parts/ytd-intro.html" %}
+
                 <table class="govuk-table govuk-!-margin-bottom-9">
-                    {% include "summary-parts/summary-ytd-title.html" %}
+                    {% include "./summary-parts/summary-ytd-title.html" %}
                     <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="col"></th>
@@ -100,13 +96,12 @@ GOV.UK Prototype Kit
                     </tbody>
                 </table>
 
-                <h2 class="govuk-heading-m">Your earnings breakdown for R04 November 2018</h2>
-                <p>This section shows you where any learner activity has led to deductions or changes to your initial
-                    earnings sub-total - and how your final earnings amount was going to be paid, through a combination
-                    of payments from us and co-investment payments from employers. </span>
-                </p>
+                <h2 class="govuk-heading-m">{{summaryContent.periodTitle}} R04 November 2018</h2>
+
+                {% include "./summary-parts/period-description.html" %}
+
                 <table class="govuk-table">
-                    <caption class="govuk-table__caption">Summary of the current period</caption>
+                    <caption class="govuk-table__caption">{{summaryContent.periodSubTitle}}</caption>
                     <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="col"></th>
@@ -118,7 +113,6 @@ GOV.UK Prototype Kit
 
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row">Total earnings for this period
-
                         </th>
                         <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
                         <td class="govuk-table__cell govuk-table__cell--numeric">&pound;31,500.00</td>
@@ -132,8 +126,7 @@ GOV.UK Prototype Kit
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row">Data locks</th>
                         <td class="govuk-table__cell govuk-table__cell--numeric">1</td>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">-&pound;1,500.00
-                        </td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">-&pound;1,500.00</td>
                     </tr>
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row">Completion holdbacks</th>
@@ -160,12 +153,10 @@ GOV.UK Prototype Kit
                         <th class="govuk-table__header" scope="row">Co-investment payments to collect
                         </th>
                         <td class="govuk-table__cell govuk-table__cell--numeric">16</td>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;2,400.00
-                        </td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;2,400.00</td>
                     </tr>
                     <tr class="govuk-table__row totals-row">
-                        <th class="govuk-table__header  govuk-!-font-weight-bold" scope="row">Total
-                        </th>
+                        <th class="govuk-table__header  govuk-!-font-weight-bold" scope="row">Total</th>
                         <td colspan="2" class="govuk-table__cell govuk-table__cell--numeric  govuk-!-font-weight-bold">
                             &pound;30,000.00
                         </td>
@@ -177,7 +168,7 @@ GOV.UK Prototype Kit
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
 
-                {% include "summary-parts/summary-llv-text.html" %}
+                {% include "./summary-parts/summary-llv-text.html" %}
 
                 <p>
                     <a href="https://docs.google.com/spreadsheets/d/1Ilb381MBHqL0fHyi1aCed3axU6jepOeRyi-d8G1G2PU/edit?usp=sharing"
@@ -187,7 +178,7 @@ GOV.UK Prototype Kit
                 </p>
             </div>
         </div>
-        {% include "summary-parts/summary-guidance.html" %}
+        {% include "./summary-parts/summary-guidance.html" %}
 
     </main>
 </div>
