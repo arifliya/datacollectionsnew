@@ -4,12 +4,16 @@ $govuk-global-styles: true;
 // Import GOV.UK Frontend
 @import "node_modules/govuk-frontend/all";
 
+@import "helpers/inverse";
+@import "helpers/tables";
 // Patterns that aren't in Frontend
 @import "patterns/check-your-answers";
 @import "patterns/task-list";
 @import "patterns/related-items";
 @import "patterns/funding-claims";
 @import "patterns/custom";
+@import "patterns/step-by-step-navigation";
+
 // @import "patterns/message-banner";
 
 // Components that aren't in Frontend
@@ -17,4 +21,12 @@ $govuk-global-styles: true;
 @import "components/button";
 @import "components/summary-variants";
 @import "components/table";
+@import "components/tables";
+//@import "components/date-filter";
+//@import "components/option-select";
+@import "components/document-list";
+@import "components/tiles";
+@import "components/accordion";
+@import "components/taxon-banner";
+@import "components/information-banner";
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you

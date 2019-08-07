@@ -1,0 +1,223 @@
+
+.taxon-feedback-wrapper {
+  background-color: #f8f8f8
+}
+
+.taxon-page__email-link-wrapper {
+  background-color: #f8f8f8;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #bfc1c3;
+  padding: 30px
+
+}
+@media (min-width: 641px){
+  .app-c-email-link {
+    font-size: 19px;
+    line-height: 1.3157894737;
+  }
+
+}
+
+.app-c-email-link {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+}
+.taxon-page__section-description {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 10px
+}
+
+@media (min-width: 641px) {
+  .taxon-page__section-description {
+    font-size:19px;
+    line-height: 1.3157894737
+  }
+}
+
+.taxon-page__section-group {
+  border-top: 2px solid #005ea5;
+  margin-top: 60px;
+  padding-top: 15px
+}
+
+.taxon-page__section-group:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0
+}
+
+.taxon-page__featured-item {
+  margin-top: 20px
+}
+
+.taxon-page__featured-item--single {
+  min-width: 330px
+}
+
+.taxon-page__featured-item .taxon-page__featured-image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.3333333333%;
+  float: left;
+  margin-bottom: 10px;
+  padding-right: 15px
+}
+
+@media (min-width: 641px) {
+  .taxon-page__featured-item .taxon-page__featured-image {
+    float:none;
+    margin-bottom: 10px;
+    padding-right: 0;
+    width: 100%
+  }
+}
+
+.taxon-page__featured-see-more {
+  display: block;
+  padding-top: 20px;
+  padding-left: 15px;
+  clear: both
+}
+
+.taxon-page__see-more {
+  display: block;
+  margin-top: 30px
+}
+
+.taxon-page__show-more-toggle {
+  display: none
+}
+
+.js-enabled .taxon-page__show-more-toggle {
+  display: block;
+  margin-bottom: 20px
+}
+
+.taxon-page__grid {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+  margin-top: 60px
+}
+
+.taxon-page__grid .taxon-page__grid-heading {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 15px
+}
+
+@media (min-width: 641px) {
+  .taxon-page__grid .taxon-page__grid-heading {
+    font-size:19px;
+    line-height: 1.3157894737
+  }
+}
+
+@media (min-width: 641px) {
+  .taxon-page__grid .taxon-page__grid-heading {
+    padding-bottom:10px
+  }
+}
+
+.taxon-page__grid .taxon-page__grid-wrapper {
+  list-style-type: none;
+  padding-bottom: 15px;
+  font-size: 0
+}
+
+.taxon-page__grid .taxon-page__grid-wrapper .taxon-page__grid-item {
+  padding-bottom: 30px
+}
+
+@media (min-width: 641px) {
+  .taxon-page__grid .taxon-page__grid-wrapper .taxon-page__grid-item {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    min-height: 150px;
+    vertical-align: top;
+    padding: 0 15px 45px 0
+  }
+}
+
+@media (min-width: 769px) {
+  .taxon-page__grid .taxon-page__grid-wrapper .taxon-page__grid-item {
+    width:33.3333333333%
+  }
+}
+
+.taxon-page__grid .taxon-page__grid-item-description {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-top: 5px;
+  margin-bottom: 20px
+}
+
+@media (min-width: 641px) {
+  .taxon-page__grid .taxon-page__grid-item-description {
+    font-size:19px;
+    line-height: 1.3157894737
+  }
+}
+
+.taxon-page__grid .taxon-page__grid-item-description:last-child {
+  margin-bottom: 0
+}
+
+.taxon-page__organisations {
+  list-style-type: none
+}
+
+.taxon-page__organisations .taxon-page__organisation {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #bfc1c3;
+  padding-bottom: 15px
+}
+
+.taxon-page__sub-topic-sidebar a {
+  display: block;
+  text-decoration: none;
+  padding-top: 10px
+}
+
+.taxon-page__link-list {
+  list-style-type: none
+}
+
+.taxon-page__link-list-item {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 10px
+}
+
+@media (min-width: 641px) {
+  .taxon-page__link-list-item {
+    font-size:19px;
+    line-height: 1.3157894737
+  }
+}
+
+@media (min-width: 641px) {
+  .taxon-page__link-list-item {
+    margin-bottom:5px
+  }
+}
+

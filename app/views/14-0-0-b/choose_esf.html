@@ -1,0 +1,59 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+		<form action="choose_file_to_upload" method="get" class="form">
+			<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+         Choose ESF collection type
+      </h1>
+    </legend>
+
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="round-1" name="return-period" type="radio" value="2">
+        <label class="govuk-label govuk-radios__label" for="round-1">
+        Round 1
+      </label>
+      <span id="round-1-item-hint" class="govuk-hint govuk-radios__hint">
+        For data before 1 April 2019
+      </span>
+      </div>
+     <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="round-2" name="return-period" type="radio" value="13">
+        <label class="govuk-label govuk-radios__label" for="round-2">
+        Round 2
+      </label>
+      <span id="round-2-item-hint" class="govuk-hint govuk-radios__hint">
+          For data after 1 April 2019
+        </span>
+      </div>
+
+      </div>
+  </fieldset>
+			</div>
+<a id="esfRound" href="#" class="govuk-button">
+  Continue
+</a>
+
+		</form>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}
