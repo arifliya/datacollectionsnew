@@ -5,7 +5,7 @@
 
 .information-banner {
   @extend .govuk-error-summary;
-  border-color: govuk-colour("purple");
+  border-color: govuk-colour("purple") !important;
 }
 
 
