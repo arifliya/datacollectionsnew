@@ -63,7 +63,7 @@ $('#qarfrmFilter :checkbox').click(function () {
   if (!$('#qarfrmFilter :checkbox').is(':checked')) {
     $('.qf').show()
   }
-})
+});
 
 $('.no-thank-you').click(function () {
   $('.feedback-wrapper').hide()
