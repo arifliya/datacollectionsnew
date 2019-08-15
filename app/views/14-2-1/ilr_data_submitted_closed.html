@@ -1,0 +1,48 @@
+{% extends "./layout_noback_signedin.html" %}
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		<div class="govuk-panel govuk-panel--confirmation">
+          <h2 class="govuk-panel__title">
+            R03 ILR file submitted
+          </h2>
+          <div class="govuk-panel__body">
+			  Submission reference: 23693
+           
+          </div>
+        </div>		
+<p>File: <span class="govuk-!-font-weight-bold">ILR-12345678-1819-20180806-151209-02.XML</span></p>
+<p>Submitted by: <span class="govuk-!-font-weight-bold">Sam Smith</span></p>
+<p>At: <span class="govuk-!-font-weight-bold">6:05pm on Friday 5 October 2018</span></p>
+        
+<h3 class="govuk-heading-m">What happens next?</h3>
+		<p>We’ve sent an email to sam.smith@college.ac.uk to confirm we’ve received your file.</p>
+		<p>We will email you again to let you know when your funding breakdown for R03 and related reports are ready to view. This will be after the next return period opens on 10 October.</p>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Wrong email address or email not arrived
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+          <p>If your email address is wrong, you’ll need to <a href="#">update it in your IdAMS account</a>.</p>
+          <p>If you haven’t received an email, it may be in your junkmail folder. <a href="./return-period.html">Check the R03 reports area</a> as your reports may still have been generated.</p>
+      </div>
+    </details>
+
+		<p><a class="govuk-button" href="./return-period.html">View reports page</a></p>
+		<p><a href="./what_data_do_you_want_to_submit.html">Submit another data return</a></p>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}

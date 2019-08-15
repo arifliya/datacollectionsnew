@@ -1,0 +1,54 @@
+
+{% extends "./layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+	  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">
+        There are errors on this page that need your attention
+      </h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#file-error">Your file must be in an XML or Zip format</a>
+          </li>      
+        </ul>
+      </div>
+    </div>
+		<h1 class="govuk-heading-xl">Choose file to upload <span class="govuk-caption-xl">Return Period 2 (R02)</span></h1>
+		<p>You are about to upload a file for Return Period 6 (R06).</p>
+
+		<p>Before uploading your file you should make sure that:</p>
+		<ul class="govuk-list govuk-list--bullet">
+      <li>it’s in an XML or Zip format</li>
+			<li>the data it contains is as complete as possible</li>
+			<li>the data it contains is as accurate as possible</li>
+		</ul>
+	  <div class="govuk-form-group govuk-form-group--error">
+      <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
+        Upload a file
+      	<span id="file-error" class="govuk-error-message">
+          Your file must be in an XML or Zip format
+        </span>
+      </label>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+	
+	  <a href="your_files_uploading.html" type="submit" class="govuk-button">
+      Upload file
+    </a>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    {% include "./includes/sidebar_help_related.html" %}
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+{% block beforeContent %}
+  {% include "./includes/back_choose_file_to_upload_ESFA.html" %}
+{% endblock %}
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+		<div class="govuk-panel govuk-panel--confirmation">
+          <h2 class="govuk-panel__title">
+            R02 supplementary data file submitted
+          </h2>
+          <div class="govuk-panel__body">
+			  Submission reference: 123456789
+
+          </div>
+        </div>
+<p>File: <span class="govuk-!-font-weight-bold">SUPPDATA-12345678-ESF-8976-20180806-151209.CSV</span></p>
+
+<p>Submitted by: <span class="govuk-!-font-weight-bold">Sam Smith</span></p>
+<p>At: <span class="govuk-!-font-weight-bold">3:17pm on Wednesday 6 August 2018</span></p>
+
+<h3 class="govuk-heading-m">What happens next?</h3>
+		<p>We’ve sent an email to sam.smith@college.ac.uk to confirm we’ve received your file.</p>
+		<p>We will email you again to let you know when your rule violation, funding and other reports are ready to view. This usually takes about 30 minutes.</p>
+
+    <details class="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+           Wrong email address or email not arrived
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>If your email address is wrong, you will need to <a href="#">update it in your IdAMS account</a>.</p>
+        <p>If you haven't received an email, it may be in your junkmail folder. <a href="./return-period.html">Check the R02 reports area</a> as your reports may still have been generated.</p>
+      </div>
+    </details>
+
+		<p><a class="govuk-button" href="./return-period.html">View reports page</a></p>
+		<p><a href="./dashboard.html">Submit another data return</a></p>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}

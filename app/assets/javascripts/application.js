@@ -295,13 +295,15 @@ $('#confirmCheckBox').click(function () {
 //   $(".report-view section").hide();
 // });
 
-$('.left-navigation li a').click(function (e) {
+$('.left-navigation li a').click(function () {
   var tab_id = $(this).attr('data-tab')
 
   $('.left-navigation li a').removeClass('govuk-!-font-weight-bold')
+  $('.left-navigation li a').removeClass('active')
   $('.report-view section').removeClass('current')
 
   $(this).addClass('govuk-!-font-weight-bold')
+  $(this).addClass('active')
   $('#' + tab_id).addClass('current')
 
   e.preventDefault()
