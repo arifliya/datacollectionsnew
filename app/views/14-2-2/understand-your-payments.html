@@ -1,0 +1,184 @@
+
+{% extends "layout-summary.html" %}
+
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+homepageUrl: "/",
+serviceName: serviceName,
+serviceUrl: "/",
+navigation: [
+{
+href: "/14-0-0/beta/summary/R01",
+text: "R01",
+active: true
+},
+{
+href: "/14-0-0/beta/summary/R02",
+text: "R02"
+},
+{
+href: "/14-0-0/beta/summary/R03",
+text: "R03"
+},
+{
+href: "/14-0-0/beta/summary/R04",
+text: "R04"
+},
+{
+href: "/14-0-0/beta/summary/R05",
+text: "R05"
+},
+{
+href: "/14-0-0/beta/summary/R06",
+text: "R06"
+},
+{
+href: "/14-0-0/beta/summary/R07",
+text: "R07"
+}
+],
+containerClasses: "govuk-width-container"
+})
+}}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+<a href="#" class="govuk-back-link">Back</a>
+{% block content %}
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+        <h1 class="govuk-heading-xl" role="heading">
+            R01 August 2018
+        </h1>
+        <p>
+            Below is a year to date summary view, including a co-investment summary to date, and a year to date period
+            view of your earnings and payments. These figures are for levy and non-levy apprentices only (funding model
+            36). For information on each row in the table, <a href="#guidance" id="">click here</a> or scroll down to
+            the bottom of the page.
+        </p>
+
+        <table class="govuk-table govuk-!-margin-bottom-9">
+            <caption class="govuk-table__caption">Summary year to date</caption>
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"></th>
+                <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Total earnings to date</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;31,500.00</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Total expected payments from ESFA to date
+                </th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;28,950.00</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="govuk-table govuk-!-margin-bottom-9">
+            <caption class="govuk-table__caption">Co-Investment Summary year to date</caption>
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"></th>
+                <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Co-Investment collected from employer to date</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
+            </tr>
+
+            </tbody>
+        </table>
+
+        <h2 class="govuk-heading-m">Current period (R01) Summary</h2>
+
+        <table class="govuk-table">
+            <caption class="govuk-table__caption">Summary of the current period</caption>
+            <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"></th>
+                <th class="govuk-table__header govuk-table__header--numeric" scope="col">Number of learners</th>
+                <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount</th>
+            </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Total earnings for period
+                </th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;31,500.00</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Data locks</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Completion holdbacks</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Clawbacks</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Other/Known issues</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
+            </tr>
+            <tr class="govuk-table__row totals-row subtotal-row">
+                <th class="govuk-table__header" scope="row">ESFA expected payment for this period</th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">21</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;28,950.00</td>
+            </tr>
+            <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Co-Investment calculated from employers for this period
+                </th>
+                <td class="govuk-table__cell govuk-table__cell--numeric">17</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">&pound;2,550.00</td>
+            </tr>
+            <tr class="govuk-table__row totals-row">
+                <th class="govuk-table__header  govuk-!-font-weight-bold" scope="row">Total</th>
+                <td colspan="2" class="govuk-table__cell govuk-table__cell--numeric  govuk-!-font-weight-bold">&pound;31,500.00</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p>Click below to go to the Learner Level View for this period</p>
+        <p>
+            <a href="https://docs.google.com/spreadsheets/d/1DSAXcpbpqDfVHdKBamM6IfRZDhcFqTzVBJCGIW5PWuk/edit?usp=sharing"
+               role="button" target="_blank" draggable="false" class="govuk-button govuk-button--start">
+                R01 Learner Level View
+            </a>
+        </p>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full" id="guidance">
+                <h2 class="govuk-heading-m">How to use this page</h2>
+                <p>This is where the guidance will go</p>
+            </div>
+        </div>
+
+
+    </main>
+</div>
+
+{% endblock %}

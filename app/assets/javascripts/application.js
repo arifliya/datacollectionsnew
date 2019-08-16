@@ -295,6 +295,22 @@ $('#confirmCheckBox').click(function () {
 //   $(".report-view section").hide();
 // });
 
+$('.left-navigation-0 li a').click(function () {
+  var tab_id = $(this).attr('data-tab')
+
+  $('.left-navigation-0 li a').removeClass('govuk-!-font-weight-bold')
+  $('.left-navigation-0 li a').removeClass('active')
+  $('.report-view section').removeClass('current')
+
+  $(this).addClass('govuk-!-font-weight-bold')
+  $(this).addClass('active')
+  $('#' + tab_id).addClass('current')
+
+  e.preventDefault()
+});
+
+
+
 $('.left-navigation li a').click(function () {
   var tab_id = $(this).attr('data-tab')
 
@@ -307,7 +323,35 @@ $('.left-navigation li a').click(function () {
   $('#' + tab_id).addClass('current')
 
   e.preventDefault()
-})
+});
+
+$(document).ready(function () {
+  if(window.location.href.indexOf("latest-submissions") > -1) {
+     $('.left-navigation-2 li #1').addClass('active');
+     $('.left-navigation-2 li #1').addClass('govuk-!-font-weight-bold');     
+  }
+
+  if(window.location.href.indexOf("historical-in-period") > -1) {
+     $('.left-navigation-2 li #2').addClass('active');
+     $('.left-navigation-2 li #2').addClass('govuk-!-font-weight-bold');
+  }
+
+  if(window.location.href.indexOf("period-end") > -1) {
+     $('.left-navigation-2 li #3').addClass('active');
+     $('.left-navigation-2 li #3').addClass('govuk-!-font-weight-bold');
+  }
+
+  if(window.location.href.indexOf("qar") > -1) {
+     $('.left-navigation-2 li #4').addClass('active');
+     $('.left-navigation-2 li #4').addClass('govuk-!-font-weight-bold');
+  }
+
+  if(window.location.href.indexOf("frm") > -1) {
+     $('.left-navigation-2 li #5').addClass('active');
+     $('.left-navigation-2 li #5').addClass('govuk-!-font-weight-bold');
+  }
+});
+
 
 $(window).scroll(function () {
   var windscroll = $(window).scrollTop()
