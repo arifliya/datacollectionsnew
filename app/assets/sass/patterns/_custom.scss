@@ -483,6 +483,18 @@ progress::-moz-progress-bar { background: white; }
 
 }
 
+@media (max-width: 641px) {
+
+  .tile-group {
+
+    a {
+      min-height: auto;
+    }
+
+  }
+
+}
+
 .second-group {
   a {
     min-height: auto;
@@ -673,4 +685,75 @@ progress::-moz-progress-bar { background: white; }
 
 .card {
   border-bottom: 1px solid $govuk-border-colour;
+}
+
+
+//-------------- new small checkbox design ----------------//
+
+.govuk-checkboxes--small .govuk-checkboxes__item {
+  min-height: 0;
+  margin-bottom: 0;
+  padding-left: 34px;
+  float: left;
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__input {
+  left: -8px;
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__label {
+  margin-top: -2px;
+
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__label {
+  // CSS was this: padding: 11px 15px 10px 1px;
+  padding: 11px 15px 10px 2px;
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__label::before {
+  top: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__label::after {
+  top: 15px;
+  left: 6px;
+  width: 9px;
+  height: 3.5px;
+  border-width: 0 0 3px 3px;
+}
+
+.govuk-checkboxes--small .govuk-checkboxes__item:hover .govuk-checkboxes__label:before {
+outline: 10px solid govuk-colour("grey-3");
+}
+
+.govuk-checkboxes__item.custom {
+  margin-right: 0px;
+  height: 32px;
+  padding-left: 22px;
+}
+
+.govuk-checkboxes--small.filter-wrapper .govuk-checkboxes__label::after {
+  top: 8px;
+}
+
+.govuk-checkboxes--small.filter-wrapper .govuk-checkboxes__label::before {
+top: 0;
+}
+
+// .govuk-checkboxes--small.filter-wrapper.reset .govuk-checkboxes__label::after {
+//     top: 16px;
+// }
+//
+// .govuk-checkboxes--small.filter-wrapper.reset .govuk-checkboxes__label::before {
+//   top: 8px;
+// }
+
+
+
+  .tile {
+    display: block;
+  background-color: govuk-colour("light-grey");
 }
