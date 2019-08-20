@@ -427,26 +427,26 @@ progress::-moz-progress-bar { background: white; }
 //******************************* NEW JOURNEY CSS *********************************//
 
 
-// a.get-started {
-//   display: block;
-//   width: auto;
-//   text-align: center;
-//   color: white;
-//   padding: 10px;
-//   background-color: $govuk-link-colour;
-//   margin-bottom: 36px;
-// }
 
 .tile-group {
 
   .tile {
     margin-bottom: 26px;
 
+    .min-height {
+      min-height: 82px;
+    }
+
+    .min-height-small {
+      min-height: 60px;
+    }
+
     .warning-info {
       background-color: govuk-colour("green");
       color: white;
       margin-top: 5px;
-      padding: 12px;
+      padding: 8px;
+      padding-left: 11px;
     }
   }
 
@@ -455,8 +455,7 @@ progress::-moz-progress-bar { background: white; }
     background-color: $govuk-link-colour;
     color: white;
     text-decoration: none;
-    padding: 15px;
-    min-height: 89px;
+    padding: 11px;
 
     .heading {
       color: white;
