@@ -326,6 +326,12 @@ $('.left-navigation li a').click(function () {
 });
 
 $(document).ready(function () {
+
+  if(window.location.href.indexOf("dashboard") > -1) {
+    $('.left-navigation-2 li #0').addClass('active');
+    $('.left-navigation-2 li #0').addClass('govuk-!-font-weight-bold');     
+ }
+
   if(window.location.href.indexOf("latest-submissions") > -1) {
      $('.left-navigation-2 li #1').addClass('active');
      $('.left-navigation-2 li #1').addClass('govuk-!-font-weight-bold');     

@@ -1,0 +1,89 @@
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+<!-- <script src="/public/javascripts/tt.js"></script> -->
+
+
+<div class="govuk-grid-row">
+
+        <div id="left-nav-wrapper" class="govuk-grid-column-one-quarter flex-grow-1"> 
+            {% include "./includes/left-nav.html" %}
+            
+        </div>
+
+    <div class="govuk-grid-column-three-quarters">
+        
+        <!-- <div class="information-banner" aria-labelledby="error-summary-title" role="alert" tabindex="-1"
+             data-module="error-summary">
+          
+            <p class="govuk-body"><span id="bannerText" class="govuk-!-font-weight-bold">ESFA support desk is unavailable from midday to 1pm today:</span>
+            <span id="bannerCont">we will monitor emails in case of emergencies.</span></p>
+        </div> -->
+
+        <h2 class="govuk-heading-l">Make a submission</h2>
+
+        <!-- <a href="what_data_do_you_want_to_submit" class="get-started govuk-!-font-size-19">Submit an ILR, EAS or ESF file</a> -->
+
+        <div class="govuk-grid-row tile-group">
+
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="choose_period">
+                        <span class="govuk-heading-m heading">ILR</span>
+                        <span class="govuk-!-font-size-16 sub-heading">Individualised Learner Record</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-16 warning-info">R05 open</div>
+    
+                </div>
+     
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="choose_eas">
+                        <span class="govuk-heading-m heading">EAS</span>
+                        <span class="govuk-!-font-size-16 sub-heading">Earnings Adjustment Statement</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-16 warning-info">R05 open</div>
+                </div>
+    
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="edit-data">
+                        <span class="govuk-heading-m heading">FC</span>
+                        <span class="govuk-!-font-size-16 sub-heading">Funding Claims</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-16 warning-info">4 days left to submit</div>
+    
+                </div>
+            </div>
+
+            
+
+    </div>
+    <!-- <div class="govuk-grid-column-one-quarter">
+        
+    </div> -->
+</div>
+
+
+<div class="govuk-grid-row">
+        <br>
+        <br>
+        
+    
+        <div class="govuk-grid-column-two-thirds">
+            {% include "./includes/sidebar_support.html" %}
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+                {% include "./includes/sidebar_tools.html" %}
+            </div>
+    </div>
+
+
+<script>
+
+</script>
+
+{% endblock %}
