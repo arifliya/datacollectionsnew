@@ -9,21 +9,21 @@ Data Collections Transformation Prototype
 <!-- <script src="/public/javascripts/tt.js"></script> -->
 
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row flex">
 
         <div id="left-nav-wrapper" class="govuk-grid-column-one-quarter flex-grow-1"> 
-            {% include "./includes/left-nav.html" %}
+            {% include "./includes/left-nav-home.html" %}
             
         </div>
 
-    <div class="govuk-grid-column-three-quarters">
+    <div class="govuk-grid-column-three-quarters flex-grow-1">
         
-        <!-- <div class="information-banner" aria-labelledby="error-summary-title" role="alert" tabindex="-1"
+        <div class="information-banner" aria-labelledby="error-summary-title" role="alert" tabindex="-1"
              data-module="error-summary">
           
             <p class="govuk-body"><span id="bannerText" class="govuk-!-font-weight-bold">ESFA support desk is unavailable from midday to 1pm today:</span>
             <span id="bannerCont">we will monitor emails in case of emergencies.</span></p>
-        </div> -->
+        </div>
 
         <h2 class="govuk-heading-l">Make a submission</h2>
 
@@ -56,9 +56,10 @@ Data Collections Transformation Prototype
                     <div class="govuk-body govuk-!-font-size-16 warning-info">4 days left to submit</div>
     
                 </div>
+            
             </div>
 
-            
+            {% include "./includes/sidebar_support.html" %}    
 
     </div>
     <!-- <div class="govuk-grid-column-one-quarter">
@@ -71,11 +72,11 @@ Data Collections Transformation Prototype
         <br>
         <br>
         <div class="govuk-grid-column-one-quarter">
-            {% include "./includes/sidebar_tools.html" %}
+                
         </div>
     
         <div class="govuk-grid-column-three-quarters">
-            {% include "./includes/sidebar_support.html" %}
+                
         </div>
 
         
