@@ -359,6 +359,21 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function () {
+
+  if(window.location.href.indexOf("dashboard") > -1) {
+    $('.top-nav li #0').addClass('active');
+    $('.top-nav li #0').addClass('govuk-!-font-weight-bold');     
+ }
+
+  if(window.location.href.indexOf("dash-2") > -1) {
+     $('.top-nav li #1').addClass('active');
+     $('.top-nav li #1').addClass('govuk-!-font-weight-bold');     
+  }
+
+});
+
+
 var distance = $('#left-nav-wrapper').offset().top,
     $window = $(window);
 

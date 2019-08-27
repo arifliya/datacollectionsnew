@@ -482,6 +482,8 @@ progress::-moz-progress-bar { background: white; }
 
 }
 
+
+
 @media (max-width: 641px) {
 
   .tile-group {
@@ -756,4 +758,23 @@ top: 0;
 
 .padding-left-11 {
   padding-left: 11px;
+}
+
+.top-nav {
+  margin: 0px 0px 36px 0;
+
+  ul {
+
+    li {
+      
+      a {
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+      }
+
+      a.active {
+        border-bottom: 5px solid govuk-colour("blue");
+      }
+    }
+  }
 }
