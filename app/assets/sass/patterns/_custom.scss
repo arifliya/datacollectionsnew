@@ -427,97 +427,6 @@ progress::-moz-progress-bar { background: white; }
 //******************************* NEW JOURNEY CSS *********************************//
 
 
-
-.tile-group {
-
-  .tile {
-    margin-bottom: 26px;
-
-    .min-height {
-      min-height: 82px;
-    }
-
-    .min-height-small {
-      min-height: 60px;
-    }
-
-    .warning-info {
-      background-color: govuk-colour("green");
-      color: white;
-      margin-top: 5px;
-      padding: 8px;
-      padding-left: 11px;
-    }
-
-    .warning-info-2 {
-      @extend .warning-info;
-      background-color: govuk-colour("grey-1");
-      
-    }
-  }
-
-  a {
-    display: block;
-    background-color: $govuk-link-colour;
-    color: white;
-    text-decoration: none;
-    padding: 11px;
-
-    .heading {
-      color: white;
-      margin-bottom: 10px;
-    }
-
-    .sub-heading {
-      text-decoration: underline;
-    }
-
-  }
-
-  a.grey {
-    background-color: govuk-colour("grey-4");
-    color: $govuk-link-colour;
-    border: 1px solid govuk-colour("border-colour");
-  }
-
-  // a:hover {
-  //   text-decoration: underline;
-  // }
-
-  a:hover .heading {
-    opacity: 0.85;
-  }
-
-  a:hover .sub-heading {
-    opacity: 0.85;
-  }
-
-  a.grey:hover {
-    color: govuk-colour("light-blue");
-  }
-
-}
-
-
-
-@media (max-width: 641px) {
-
-  .tile-group {
-
-    a {
-      min-height: auto;
-    }
-
-  }
-
-}
-
-.second-group {
-  a {
-    min-height: auto;
-  }
-}
-
 .flex {
   display: flex;
   flex-direction: column;
@@ -594,10 +503,10 @@ progress::-moz-progress-bar { background: white; }
           // padding: 6px 0 6px 11px;
         }
 
-        a.active {
-          // border-left: 5px solid govuk-colour("light-blue");
-          // margin-left: -4px;
-        }
+        // a.active {
+        //   // border-left: 5px solid govuk-colour("light-blue");
+        //   // margin-left: -4px;
+        // }
 
         a:hover {
           text-decoration: underline;
