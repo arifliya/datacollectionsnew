@@ -448,6 +448,12 @@ progress::-moz-progress-bar { background: white; }
       padding: 8px;
       padding-left: 11px;
     }
+
+    .warning-info-2 {
+      @extend .warning-info;
+      background-color: govuk-colour("grey-1");
+      
+    }
   }
 
   a {
@@ -468,6 +474,12 @@ progress::-moz-progress-bar { background: white; }
 
   }
 
+  a.grey {
+    background-color: govuk-colour("grey-4");
+    color: $govuk-link-colour;
+    border: 1px solid govuk-colour("border-colour");
+  }
+
   // a:hover {
   //   text-decoration: underline;
   // }
@@ -478,6 +490,10 @@ progress::-moz-progress-bar { background: white; }
 
   a:hover .sub-heading {
     opacity: 0.85;
+  }
+
+  a.grey:hover {
+    color: govuk-colour("light-blue");
   }
 
 }
