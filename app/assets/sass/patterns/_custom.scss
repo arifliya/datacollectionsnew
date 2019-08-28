@@ -510,7 +510,7 @@ progress::-moz-progress-bar { background: white; }
 
         a:hover {
           text-decoration: underline;
-          color: govuk-colour("light-blue");
+          color: govuk-colour("blue");
         }
 
         // a:visited {
@@ -533,7 +533,7 @@ progress::-moz-progress-bar { background: white; }
         }
 
         a.active {
-          border-left: 5px solid govuk-colour("light-blue");
+          border-left: 5px solid govuk-colour("blue");
           margin-left: -4px;
         }
 
@@ -562,7 +562,7 @@ progress::-moz-progress-bar { background: white; }
         }
 
         a.active {
-          border-left: 5px solid govuk-colour("light-blue");
+          border-left: 5px solid govuk-colour("blue");
           margin-left: -4px;
         }
 
@@ -686,20 +686,48 @@ top: 0;
 }
 
 .top-nav {
-  margin: 0px 0px 36px 0;
+  margin: 0px 0px 16px -15px;
 
   ul {
 
     li {
-      
+      margin-bottom: 25px;
+
       a {
         text-decoration: none;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px 10px 15px;
+        
       }
 
       a.active {
-        border-bottom: 5px solid govuk-colour("blue");
+        border-left: 5px solid govuk-colour("blue");
+        padding-left: 10px;
       }
     }
   }
+}
+
+@include govuk-media-query($from: 640) {
+
+  .top-nav {
+    margin: 0px 0px 46px 0;
+  
+    ul {
+  
+      li {
+        
+        a {
+          text-decoration: none;
+          padding: 10px 20px 10px 20px;
+        }
+  
+        a.active {
+          border-left: 0;
+          padding-left: 20px;
+          border-bottom: 5px solid govuk-colour("blue");
+        }
+      }
+    }
+  }
+  
 }
