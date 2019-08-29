@@ -374,6 +374,62 @@ $(document).ready(function () {
 });
 
 
+$('#startHelp').click(function(e){
+  $('#ob1').show();
+
+  e.preventDefault();
+
+});
+
+$('.close').click(function(e){
+  $(this).parent().hide();
+
+  e.preventDefault();
+});
+
+$('.next').click(function(e){
+  $('#ob1').hide();
+  $('#ob2').show();
+
+  e.preventDefault();
+});
+
+$('.next2').click(function(e){
+  $('#ob2').hide();
+  $('#ob3').show();
+
+  e.preventDefault();
+});
+
+$('.next3').click(function(e){
+  $('#ob3').hide();
+  $('#ob4').show();
+
+  e.preventDefault();
+});
+
+$('.next4').click(function(e){
+  $('#ob4').hide();
+  $('#ob5').show();
+
+  e.preventDefault();
+});
+
+$('.next5').click(function(e){
+  $('#ob5').hide();
+  $('#ob6').show();
+
+  e.preventDefault();
+});
+
+$('.next6').click(function(e){
+  $('#ob6').hide();
+  // $('#ob1').show();
+
+  e.preventDefault();
+});
+
+
 var distance = $('#left-nav-wrapper').offset().top,
     $window = $(window);
 
