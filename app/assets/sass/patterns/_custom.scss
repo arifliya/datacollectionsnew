@@ -691,7 +691,7 @@ top: 0;
   ul {
 
     li {
-      margin-bottom: 25px;
+      margin-top: 15px;
 
       a {
         text-decoration: none;
@@ -710,7 +710,7 @@ top: 0;
 @include govuk-media-query($from: 640) {
 
   .top-nav {
-    margin: 0px 0px 46px 0;
+    margin: 0px 0px 0px 0px;
   
     ul {
   
