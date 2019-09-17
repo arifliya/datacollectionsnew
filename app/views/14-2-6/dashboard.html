@@ -1,4 +1,4 @@
-{% extends "./layout_noback_signedin_home.html" %}
+{% extends "./layout_noback_signedin.html" %}
 
 
 {% block pageTitle %}
@@ -23,6 +23,8 @@ Data Collections Transformation Prototype
             <span id="bannerCont">we will monitor emails in case of emergencies.</span></p>
         </div>
 
+        {% include "./includes/top-nav.html" %}
+        <br><br>
         <h2 class="govuk-heading-l">Make a submission</h2>
 
         <!-- <a href="what_data_do_you_want_to_submit" class="get-started govuk-!-font-size-19">Submit an ILR, EAS or ESF file</a> -->

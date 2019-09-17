@@ -1,4 +1,4 @@
-{% extends "./layout_noback_signedin_home.html" %}
+{% extends "./layout_noback_signedin.html" %}
 
 
 {% block pageTitle %}
@@ -22,6 +22,9 @@ Data Collections Transformation Prototype
             <p class="govuk-body"><span id="bannerText" class="govuk-!-font-weight-bold">ESFA support desk is unavailable from midday to 1pm today:</span>
             <span id="bannerCont">we will monitor emails in case of emergencies.</span></p>
         </div>
+
+        {% include "./includes/top-nav.html" %}
+        <br><br>
 
         <h2 class="govuk-heading-l">Reports and data</h2>
 
