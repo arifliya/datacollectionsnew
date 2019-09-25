@@ -1,0 +1,188 @@
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+<!-- <script src="/public/javascripts/tt.js"></script> -->
+
+
+<div class="govuk-grid-row flex">
+
+       
+
+    <div class="govuk-grid-column-three-quarters">
+            
+   
+        <div class="information-banner" aria-labelledby="error-summary-title" role="alert" tabindex="-1"
+             data-module="error-summary">
+          
+            <p class="govuk-body"><span id="bannerText" class="govuk-!-font-weight-bold">ESFA support desk is unavailable from midday to 1pm today:</span>
+            <span id="bannerCont">we will monitor emails in case of emergencies.</span></p>
+        </div>
+
+        <h2 class="govuk-heading-l">Make a submission
+            <span class="govuk-caption-l">R05 closes in 6 days</span>
+        </h2>
+
+        <!-- <a href="what_data_do_you_want_to_submit" class="get-started govuk-!-font-size-19">Submit an ILR, EAS or ESF file</a> -->
+
+        <div class="govuk-grid-row tile-group">
+
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="choose_period">
+                        <span class="govuk-heading-m heading">ILR</span>
+                        <span class="govuk-heading-s heading">Individualised Learner Record</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info">R05 open</div>
+    
+                </div>
+     
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="choose_eas">
+                        <span class="govuk-heading-m heading">EAS</span>
+                        <span class="govuk-heading-s heading">Earnings Adjustment Statement</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info">R05 open</div>
+                </div>
+
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="choose_esf">
+                        <span class="govuk-heading-m heading">ESF</span>
+                        <span class="govuk-heading-s heading">European Social <br> Fund</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info">R05 open</div>
+                </div>
+    
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="edit-data">
+                        <span class="govuk-heading-m heading">FC</span>
+                        <span class="govuk-heading-s heading">Funding <br> Claims</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info">4 days left to submit</div>
+    
+                </div>
+            
+            </div>
+
+            <h2 class="govuk-heading-l">Reports and data</h2>
+
+        
+
+        <div class="govuk-grid-row tile-group">
+
+                <div class="govuk-grid-column-one-third tile">
+                        <a class="grey min-height-small" href="latest-submissions">
+                            <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Latest submissions</span>
+                            
+                        </a>
+                        <div class="govuk-body warning-info-2">3 new submissions</div>
+                        <span id="ob1" class="govuk-body onboarding-info">
+                            <div class="arrow-up"></div>
+                            <a class="close" href="#">Close</a>
+                            View reports for submissions you’ve made during R05 (19/20) 
+                             <br>
+                            <a href="#" class="govuk-button govuk-!-margin-top-2 next">Next</a> 
+                        </span>
+                    </div>
+
+    
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="grey min-height-small" href="historical-in-period">
+                        <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Submission history</span>
+                        
+                    </a>
+                    <div class="govuk-body warning-info-2">View reports</div>
+                    <span id="ob2" class="govuk-body onboarding-info">
+                            <div class="arrow-up"></div>
+                            <a class="close" href="#">Close</a>
+                            View in-period reports for periods that have closed. These are the submissions your payments have been calculated on. 
+                             <br>
+                            <a href="#" class="govuk-button govuk-!-margin-top-2 next2">Next</a> 
+                        </span>
+                </div>
+
+                <div class="govuk-grid-column-one-third tile">
+                        <a class="grey min-height-small" href="edit-data">
+                            <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">FC</span> <br>
+                            <span class="govuk-body">Funding Claims</span>
+                        </a>
+                        <div class="govuk-body warning-info-2">View submissions</div>
+                        <span id="ob6" class="govuk-body onboarding-info">
+                                <div class="arrow-up"></div>
+                                <a class="close" href="#">Close</a>
+                                View your submission history for Funding Claims.
+                                 <br>
+                                <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
+                            </span>
+                    </div>
+
+
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="grey min-height-small" href="qar">
+                        <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">QAR</span>
+                        <p>Qualification Achievement Rates </p>
+                    </a>
+                    <div class="govuk-body warning-info-2">View reports</div>
+                    <span id="ob4" class="govuk-body onboarding-info">
+                            <div class="arrow-up"></div>
+                            <a class="close" href="#">Close</a>
+                            View your qualification achievement rates. Reports for R01 are available now.
+                             <br>
+                            <a href="#" class="govuk-button govuk-!-margin-top-2 next4">Next</a> 
+                        </span>
+                </div>
+    
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="grey min-height-small" href="frm">
+                        <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">FRM</span> 
+                        <p>Funding Rules Monitoring</p> 
+                        
+                    </a>
+                    <div class="govuk-body warning-info-2">R04 available</div>
+                    <span id="ob5" class="govuk-body onboarding-info">
+                            <div class="arrow-up"></div>
+                            <a class="close" href="#">Close</a>
+                            Funding Rules Monitoring give you an idea of any issues with your data you might need to address. Reports from R12 are available now.
+                             <br>
+                            <a href="#" class="govuk-button govuk-!-margin-top-2 next5">Next</a> 
+                        </span>
+                </div>
+
+                
+    
+        </div>
+    </div>
+
+    <div class="govuk-grid-column-one-quarter"> 
+        {% include "./includes/sidebar_related.html" %}
+        
+    </div>
+    <!-- <div class="govuk-grid-column-one-quarter">
+        
+    </div> -->
+</div>
+
+
+<div class="govuk-grid-row">
+        <br>
+        <br>
+        <div class="govuk-grid-column-one-quarter">
+                
+        </div>
+    
+        <div class="govuk-grid-column-three-quarters">
+                
+        </div>
+
+        
+    </div>
+
+
+<script>
+
+</script>
+
+{% endblock %}
