@@ -10,12 +10,12 @@ serviceUrl: "/",
 navigation: [
 {
 href: "/beta/summary/R01",
-text: "R01"
+text: "R01",
+active: true
 },
 {
 href: "/beta/summary/R02",
-text: "R02",
-active: true
+text: "R02"
 },
 {
 href: "/beta/summary/R03",
@@ -43,8 +43,8 @@ GOV.UK Prototype Kit
     <main class="govuk-main-wrapper " id="main-content" role="main">
         <div class="govuk-grid-row">
             <div class="govuk-grid-column-full">
-                <h1 class="govuk-heading-xl">
-                    R02 September 2018
+                <h1 class="govuk-heading-xl" role="heading">
+                    R01 August 2018
                 </h1>
 
                 {% include "./summary-parts/details.html" %}
@@ -66,7 +66,7 @@ GOV.UK Prototype Kit
                     <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row">Total earnings</th>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;63,000.00</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;31,500.00</td>
                     </tr>
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row">ESFA planned payments to you
@@ -74,10 +74,11 @@ GOV.UK Prototype Kit
                                 Excludes co-investment
                             </span>
                         </th>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;57,900.00</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;28,950.00</td>
                     </tr>
                     </tbody>
                 </table>
+
                 <table class="govuk-table govuk-!-margin-bottom-9">
                     <caption class="govuk-table__caption">Year to date Co-Investment summary</caption>
                     <thead class="govuk-table__head">
@@ -89,12 +90,13 @@ GOV.UK Prototype Kit
                     <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row">Total co-investment collected</th>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;1,800.00</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
                     </tr>
+
                     </tbody>
                 </table>
 
-                <h2 class="govuk-heading-m">{{summaryContent.periodTitle}} R02 September 2018</h2>
+                <h2 class="govuk-heading-m">{{summaryContent.periodTitle}} R01 August 2018</h2>
 
                 {% include "./summary-parts/period-description.html" %}
 
@@ -116,14 +118,8 @@ GOV.UK Prototype Kit
                         <td class="govuk-table__cell govuk-table__cell--numeric">&pound;31,500.00</td>
                     </tr>
                     <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="row">Earnings released from previous periods
-                        </th>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">&pound;0.00</td>
-                    </tr>
-                    <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="row" colspan="3">
-                            Issues identified this period:
+                            Issues identified this month:
                         </th>
                     </tr>
 
@@ -174,9 +170,9 @@ GOV.UK Prototype Kit
                 {% include "./summary-parts/summary-llv-text.html" %}
 
                 <p>
-                    <a href="https://docs.google.com/spreadsheets/d/1kZrhTl1JqHke9BRR62MqQvp7VTIiRvFxC30rij6wIdg/edit?usp=sharing"
+                    <a href="https://docs.google.com/spreadsheets/d/1DSAXcpbpqDfVHdKBamM6IfRZDhcFqTzVBJCGIW5PWuk/edit?usp=sharing"
                        role="button" target="_blank" draggable="false" class="govuk-button govuk-button--start">Download
-                        R02 Learner Level View
+                        R01 Learner Level View
                     </a>
                 </p>
             </div>
