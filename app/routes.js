@@ -15,5 +15,8 @@ router.get('/beta/summary/R03', function (req, res) {
 router.get('/beta/summary/R04', function (req, res) {
   res.render('14-1-1/beta/summary/R04')
 })
+router.get('/beta/summary/R05', function (req, res) {
+  res.render('14-1-1/beta/summary/R05')
+})
 
 module.exports = router
