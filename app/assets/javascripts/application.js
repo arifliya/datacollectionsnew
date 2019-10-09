@@ -67,7 +67,13 @@ $('#qarfrmFilter :checkbox').click(function () {
 
 $('.no-thank-you').click(function () {
   $('.feedback-wrapper').hide()
-})
+});
+
+$('#printPage').click(function (e) {
+  window.print();
+
+  e.preventDefault();
+});
 
 $('#continue').click(function () {
   if ($('#what-to-submit-1').is(':checked')) { location.href = 'choose_period' }
@@ -440,7 +446,6 @@ $window.scroll(function() {
       $(".back-to-top").addClass("hidden");
   }
 });
-
 
 
 $(window).scroll(function () {
