@@ -1,4 +1,3 @@
-
 {% extends "./layout_backtowhat.html" %}
 
 
@@ -11,49 +10,46 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-    <div class="govuk-highlight-summary-yellow" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+    <!-- <div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
       <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
-        ILR period closed
+        Levy contracted apprenticeship payments
       </h2>
       <div class="govuk-highlight-summary__body">
-    	  <p>The return period is now closed. You can validate, but not submit, data.</p>
-          
+    	  <p>To be paid, there must be a matching, fully approved record already in the apprenticeship service.</p>
+          <p><a href="#">Find out more</a></p>
       </div>
-    </div>
+    </div> -->
 
 		<form action="choose_file_to_upload" method="get" class="form">
 			<div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Choose ILR return period
+         Choose EAS return period
       </h1>
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="return-period" name="return-period" type="radio" value="2">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-1">
-        Return period 2 - 2019 to 2020
-        <!-- <span class="govuk-caption-m">2019 to 2020</span> -->
+        Return period 2
+        <span class="govuk-caption-m">2019 to 2020</span>
       </label>
       </div>
      <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="return-period-2" name="return-period" type="radio" value="13">
         <label class="govuk-label govuk-radios__label" for="what-to-submit-2">
-        Return period 13 - 2018 to 2019
-        <!-- <span class="govuk-caption-m">2018 to 2019</span> -->
+        Return period 13
+        <span class="govuk-caption-m">2018 to 2019</span>
       </label>
       </div>
 
       </div>
   </fieldset>
 			</div>
-<a href="./choose_file_to_upload_closed-v2.html" class="govuk-button">
+<a href="./eas_choose_file_to_upload" class="govuk-button">
   Continue
 </a>
-<!-- <a href="./choose_file_to_upload.html" class="govuk-button">
-  Continue
-</a> -->
 
 		</form>
     </div>

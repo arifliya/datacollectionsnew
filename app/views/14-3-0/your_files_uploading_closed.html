@@ -1,0 +1,37 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">		
+		
+  <h2 class="govuk-heading-xl">
+    Your file’s uploading
+  </h2>
+  
+	  <!--<p>{{ uploadingFile }}</p>-->
+	  <p><img src="/public/images/spinner-gif-13.gif"/></p>
+        
+        <script type="text/javascript">   
+    function Redirect() 
+    {  
+        window.location="./theres_a_problem_closed.html"; 
+    } 
+    setTimeout('Redirect()', 3000);   
+</script>
+  
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+
+</div>
+
+{% endblock %}

@@ -5,7 +5,7 @@
     margin-bottom: 26px;
 
     .min-height {
-      min-height: 82px;
+      min-height: 80px;
     }
 
     .min-height-small {
@@ -116,6 +116,14 @@
 @media (max-width: 641px) {
 
   .tile-group {
+
+    .tile {
+
+      .min-height {
+        min-height: 50px;
+      }
+
+    }
 
     a {
       min-height: auto;
