@@ -732,3 +732,19 @@ top: 0;
   
 }
 
+.govuk-button--secondary {
+  background-color: govuk-colour("grey-3");
+  box-shadow: 0 2px 0 govuk-colour("grey-1");
+}
+
+.govuk-button--secondary, .govuk-button--secondary:link, .govuk-button--secondary:visited, .govuk-button--secondary:active, .govuk-button--secondary:hover {
+    color: #0b0c0c;
+}
+
+.govuk-button--secondary:hover {
+  background-color: govuk-colour("grey-2");
+}
+
+.govuk-button--secondary:focus {
+  background-color: govuk-colour("grey-2");
+}
