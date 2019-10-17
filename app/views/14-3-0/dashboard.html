@@ -24,38 +24,46 @@ Data Collections Transformation Prototype
                     <a href="historical-in-period"> View and download your apprenticeship breakdown</a>.</span></p>
         </div>
 
-        <h2 class="govuk-heading-l">Make a submission
-            <span class="govuk-caption-l">R06 closes in 6 days</span>
+        <h2 id="makeSubmission" class="govuk-heading-l">Make a submission
+            <span id="returnPeriodStatus" class="govuk-caption-l"></span>
         </h2>
 
         <!-- <a href="what_data_do_you_want_to_submit" class="get-started govuk-!-font-size-19">Submit an ILR, EAS or ESF file</a> -->
 
         <div class="govuk-grid-row tile-group">
 
-                <div class="govuk-grid-column-one-third tile">
+                <div id="ilrTile" class="govuk-grid-column-one-third tile hidden">
                     <a class="min-height" href="ilr-int">
                         <span class="govuk-heading-m govuk-!-margin-bottom-0 heading">ILR</span>
                         <span class="govuk-heading-s govuk-!-margin-bottom-0 heading">Individualised Learner Record</span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">R06 open</div>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info period-status"></div>
     
                 </div>
      
-                <div class="govuk-grid-column-one-third tile">
+                <div id="easTile" class="govuk-grid-column-one-third tile hidden">
                     <a class="min-height" href="eas_choose_file_to_upload">
                         <span class="govuk-heading-m govuk-!-margin-bottom-0 heading">EAS</span>
                         <span class="govuk-heading-s govuk-!-margin-bottom-0 heading">Earnings Adjustment Statement</span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">R06 open</div>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info period-status"></div>
+                </div>
+
+                <div id="esfTile" class="govuk-grid-column-one-third tile hidden">
+                    <a class="min-height" href="choose_esf">
+                        <span class="govuk-heading-m govuk-!-margin-bottom-0 heading">ESF</span>
+                        <span class="govuk-heading-s govuk-!-margin-bottom-0 heading">European Social Fund</span>
+                    </a>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info period-status">R06 open</div>
                 </div>
 
     
-                <div class="govuk-grid-column-one-third tile">
+                <div id="fcTile" class="govuk-grid-column-one-third tile hidden">
                     <a class="min-height" href="edit-data">
                         <span class="govuk-heading-m govuk-!-margin-bottom-0 heading">FC</span>
                         <span class="govuk-heading-s govuk-!-margin-bottom-0 heading">Funding Claims</span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">4 days left to submit</div>
+                    <div class="govuk-body govuk-!-font-size-19 warning-info fc-status">4 days left to submit</div>
     
                 </div>
             
@@ -67,7 +75,7 @@ Data Collections Transformation Prototype
 
         <div class="govuk-grid-row tile-group">
 
-                <div class="govuk-grid-column-one-third tile">
+                <div id="reportsTile" class="govuk-grid-column-one-third tile hidden">
                         <a class="grey min-height-small" href="latest-submissions">
                             <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Reports</span>
                             
@@ -85,7 +93,7 @@ Data Collections Transformation Prototype
     
                 
 
-                <!-- <div class="govuk-grid-column-one-third tile">
+                <div id="fcTileView" class="govuk-grid-column-one-third tile hidden">
                         <a class="grey min-height-small" href="edit-data">
                             <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">FC</span> <br>
                             <span class="govuk-body govuk-!-font-size-16">Funding Claims</span>
@@ -98,7 +106,7 @@ Data Collections Transformation Prototype
                                  <br>
                                 <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
                             </span>
-                    </div> -->
+                    </div>
 
 
                 <!-- <div class="govuk-grid-column-one-third tile">

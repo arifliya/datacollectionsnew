@@ -1,5 +1,9 @@
 .tile-group {
 
+  .hidden {
+    display: none;
+  }
+  
   .tile {
     position: relative;
     margin-bottom: 26px;

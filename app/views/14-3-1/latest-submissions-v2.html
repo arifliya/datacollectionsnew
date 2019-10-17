@@ -1,0 +1,187 @@
+
+{% extends "./layout_backtowhat.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+ <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        
+
+
+
+
+ <div class="govuk-grid-row flex">
+
+  <div id="left-nav-wrapper" class="govuk-grid-column-one-quarter flex-grow-1"> 
+    {% include "./includes/left-nav.html" %}
+  </div>
+
+  <div class="govuk-grid-column-three-quarters flex-grow-1">
+
+     <!-- ------------------tab 1 submissions -------------------- -->
+
+
+<section>
+
+    <h2 class="govuk-heading-l" id="submission">Latest submissions
+      <span class="govuk-caption-m">View submissions from the last 3 periods of 2018 to 2019 and up to 3 periods for 2019 to 2020</span>
+    </h2>
+<p>Each time you submit a new file your reports will be updated. To view your latest figures you should download the reports for your most recent submission.</p>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+
+      <span id="waste-hint" class="govuk-hint">
+        Filter your submission types
+      </span>
+      <div id="typeFilter" class="govuk-checkboxes govuk-checkboxes--small">
+        <div class="govuk-checkboxes__item">
+          <input id="ILR" class="govuk-checkboxes__input" name="waste" type="checkbox" value="ilr">
+          <label class="govuk-label govuk-checkboxes__label" for="ILR">
+            ILR
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input id="EAS" class="govuk-checkboxes__input" name="waste" type="checkbox" value="eas">
+          <label class="govuk-label govuk-checkboxes__label" for="EAS">
+            EAS
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input id="ESF" class="govuk-checkboxes__input" name="waste" type="checkbox" value="esf">
+          <label class="govuk-label govuk-checkboxes__label" for="ESF">
+            ESF
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+
+  <h2 class="govuk-heading-l">Academic year 2019 to 2020</h2>
+
+
+  <h3 class="govuk-heading-m">R05</h3>
+
+  <table class="govuk-table">
+    <caption class="govuk-table__caption govuk-visually-hidden">Dates and file name</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Reference</th>
+        <th class="govuk-table__header" scope="col">Type</th>
+        <th class="govuk-table__header" scope="col">Reports</th>
+      </tr>
+    </thead>
+    <tbody id="submissions" class="govuk-table__body">
+      <tr class="govuk-table__row ilr">
+        <th class="govuk-table__header" scope="row"> 28 July 2019 at 1:00pm</th>
+        <td class="govuk-table__cell">43027</td>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
+      </tr>
+      <tr class="govuk-table__row esf">
+        <th class="govuk-table__header" scope="row"> 26 July 2019 at 8:00am </th>
+        <td class="govuk-table__cell">43004</td>
+        <td class="govuk-table__cell">ESF</td>
+        <td class="govuk-table__cell">Failed</td>
+
+      </tr>
+      <tr class="govuk-table__row ilr">
+        <th class="govuk-table__header" scope="row">  25 July 2019 at 1:00pm </th>
+        <td class="govuk-table__cell">41233</td>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
+
+      </tr>
+      <tr class="govuk-table__row eas">
+        <th class="govuk-table__header" scope="row"> 24 July 2019 at 1:00pm </th>
+        <td class="govuk-table__cell">41227</td>
+        <td class="govuk-table__cell">EAS</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+  <!-- <h2 class="govuk-heading-l">Academic year 2018 to 2019</h2>
+
+
+  
+
+  <h3 class="govuk-heading-m">R13</h3>
+
+  <table class="govuk-table">
+  <caption class="govuk-table__caption govuk-visually-hidden">Dates and file name</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Type</th>
+      <th class="govuk-table__header" scope="col">File</th>
+         <th class="govuk-table__header" scope="col">Submitted by</th>
+        <th class="govuk-table__header" scope="col">Reference</th>
+    <th class="govuk-table__header" scope="col">Reports</th>
+
+    </tr>
+  </thead>
+  <tbody id="submissions" class="govuk-table__body">
+    <tr class="govuk-table__row ilr">
+      <th class="govuk-table__header" scope="row">4 August 2019 at 1:00pm</th>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-02.XML</a></td>
+        <td class="govuk-table__cell">Bob Afett</td>
+         <td class="govuk-table__cell">300</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
+
+    </tr>
+    <tr class="govuk-table__row ilr">
+      <th class="govuk-table__header" scope="row">2 August 2019 at 1:00pm</th>
+        <td class="govuk-table__cell">ILR</td>
+        <td class="govuk-table__cell"><a href="#">ILR-12345678-1819-20180806-05092018-01.XML</a></td>
+        <td class="govuk-table__cell">Bob Afett</td>
+         <td class="govuk-table__cell">200</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
+
+    </tr>
+    <tr class="govuk-table__row eas">
+      <th class="govuk-table__header" scope="row">1 August 2019 at 1:00pm</th>
+        <td class="govuk-table__cell">EAS</td>
+        <td class="govuk-table__cell"><a href="#">EAS-12345678-1819-20180806-05092018-01.XML</a></td>
+        <td class="govuk-table__cell">Bob Afett</td>
+         <td class="govuk-table__cell">500</td>
+        <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Download reports</a></td>
+
+    </tr>
+  </tbody>
+  </table> -->
+
+
+
+</section>
+
+
+
+</div>
+</div>
+
+<h3 class="govuk-heading-s">ESFA support desk</h3>
+<p>For help and support call us on 0370 267 0001, Monday to Thursday, 8:30am-5pm,<br> or Fridays, 8.30am-4pm. Or
+<!-- <a href="sde.servicedesk@education.gov.uk">sde.servicedesk@education.gov.uk</a></p> -->
+log a query on the <a target="blank" href="https://form.education.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-f9f4f5a1-936f-448b-bbeb-9dcdd595f468/AF-Stage-8aa41278-3cdd-45a3-ad87-80cbffb8b992/definition.json&redirectlink=%2Fen&cancelRedirectLink=%2Fen&consentMessage=yes">enquiry form</a>.</p>
+
+
+</div>
+
+</div>
+
+{% endblock %}
