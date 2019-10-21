@@ -102,6 +102,14 @@
 
 }
 
+.interruption-card.hidden {
+  display: none;
+}
+
+#reviewAndEdit {
+  display: none;
+}
+
 @media (min-width: 769px){
 .interruption-card, .report-data-figures {
     margin-top: 1.25em;

@@ -94,15 +94,23 @@ window.onload = function() {
     //   $('.information-banner').removeClass('hidden');
     // }
 
+    // $('#returnPeriodName').text(data[0].test);
+
     $('#journey').append(data[0].journey);
 
 
     if (data[0].fc == 'closed') {
       $('#fcTile').hide();
       $('#fcTileView').show();
+      $('#fcStatus').text('Opens on 5 October 2019');
+      
+      
     } else if (data[0].fc == 'open') {
       $('#fcTile').show();
       $('#fcTileView').hide();
+      $('.interruption-card.hidden').show();
+      $('#fcStatus').text('Open for submission');
+      $('#reviewAndEdit').show();
     }
 
 
@@ -122,6 +130,10 @@ window.onload = function() {
       $('#easTile').hide();
       $('#esfTile').hide();
       $('.period-status').text('R06 validation only');
+      $('#returnPeriodName').text('Return Period 6 (R06)');
+      $('.period-title').text('Return period 6 is not open');
+      $('#r06Table').hide();
+      $('#r06Header').text('R06 opens on 10 October');
 
       if (data[0].ilr == 'hide') {
         $('#ilrTile').hide();
@@ -136,6 +148,8 @@ window.onload = function() {
       $('#easTile').show();
       $('#esfTile').show();
       $('.period-status').text('R06 is open');
+      $('#returnPeriodName').text('Return Period 6 (R06)');
+      
 
       if (data[0].ilr == 'hide') {
         $('#ilrTile').hide();
@@ -159,7 +173,7 @@ window.onload = function() {
     if (data[0].journey == '1-open-1-validation') {
       $('#returnPeriodStatus').text('R02 closes in 4 days, R13 opens on 26 September');
       $('#ilrItnButton').attr("href", "./choose_period_closed.html");
-      $('#easTile a').attr("href", "./choose_eas.html");
+      $('#easTile a').attr("href", "./eas_choose_file_to_upload.html");
       $('#reportsTile a').attr("href", "latest-submissions-overlapping");
       $('#1').attr("href", "latest-submissions-overlapping");
       $('#2').attr("href", "historical-in-period-overlapping");
@@ -168,7 +182,9 @@ window.onload = function() {
       $('.period-status').text('R02 open, R13 not open');
       $('#esfTile .period-status').text('R02 is open');
       $('#viewReportsSubmittedButton').attr("href", "latest-submissions-overlapping.html");
-
+      $('#returnPeriodName').text('Return period 13');
+      $('.period-title').text('Return period 13 is not open');
+      
       if (data[0].ilr == 'hide') {
         $('#ilrTile').hide();
       } else {
@@ -186,6 +202,7 @@ window.onload = function() {
       } else {
         $('#esfTile').show();
       }
+      
     }
 
     if (data[0].journey == '2-open-periods') {
@@ -200,7 +217,7 @@ window.onload = function() {
       $('.period-status').text('R02 and R13 are open');
       $('#esfTile .period-status').text('R02 is open');
       $('#viewReportsSubmittedButton').attr("href", "latest-submissions-overlapping.html");
-      
+      $('#returnPeriodName').text('Return Period 13 (R13)');
 
       if (data[0].ilr == 'hide') {
         $('#ilrTile').hide();
@@ -222,6 +239,7 @@ window.onload = function() {
     }
 
     
+      
 
     console.log(data);
   }
