@@ -183,7 +183,20 @@ window.onload = function() {
       $('#esfTile .period-status').text('R02 is open');
       $('#viewReportsSubmittedButton').attr("href", "latest-submissions-overlapping.html");
       $('#returnPeriodName').text('Return period 13');
-      $('.period-title').text('Return period 13 is not open');
+      $('.period-title').text('Return period 13 is not open'); 
+      $('#latestSubGreyText').text('View submissions from return period 2'); 
+      $('#r13Table').hide();
+      $('#r13Header').text('R13 opens on 26 September');
+
+      // $('#periodClosedButton').click(function(){
+      //   if ($('#return-period').is(':checked')) {
+      //     $('#returnPeriodName').text(data[0].period);
+      //     alert('r02')
+      //   } else if ($('#return-period-2').is(':checked')) {
+      //     $('#returnPeriodName').text(data[1].period);
+      //     alert('r13')
+      //   }
+      // });
       
       if (data[0].ilr == 'hide') {
         $('#ilrTile').hide();
@@ -218,6 +231,8 @@ window.onload = function() {
       $('#esfTile .period-status').text('R02 is open');
       $('#viewReportsSubmittedButton').attr("href", "latest-submissions-overlapping.html");
       $('#returnPeriodName').text('Return Period 13 (R13)');
+      $('#latestSubGreyText').text('View submissions from return period 2 and return period 13'); 
+
 
       if (data[0].ilr == 'hide') {
         $('#ilrTile').hide();
