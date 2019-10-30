@@ -1,0 +1,33 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+  <h2 class="govuk-heading-xl">
+    Are you sure you want to cancel the processing file? 
+  </h2>
+
+  
+    <p class="govuk-body">ILR-12345678-1819-20180806-05092018-02.XML</p>
+    
+
+<br>
+
+<p><a class="govuk-button" href="processing-cancelled">Confirm</a> &nbsp &nbsp &nbsp <a href="latest-submissions-v2">Back to reports</a></p>
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+
+</div>
+
+{% endblock %}

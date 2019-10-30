@@ -439,7 +439,7 @@ $('#periodClosedButton').click(function () {
   if ($('#return-period').is(':checked')) { location.href = 'choose_file_to_upload' }
   if ($('#return-period-2').is(':checked')) { location.href = 'choose_file_to_upload_closed' }
 });
-
+ 
 
 
 var distance = $('#left-nav-wrapper').offset().top,
