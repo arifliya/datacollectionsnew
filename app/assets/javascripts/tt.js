@@ -174,7 +174,7 @@ window.onload = function() {
         $('#esfTile').show();
       }
     }
-
+ 
     if (data[0].journey == '1-open-1-validation') {
       $('#returnPeriodStatus').text('R02 closes in 4 days, R13 opens on 26 September');
       $('#ilrItnButton').attr("href", "./choose_period_closed.html");
@@ -185,6 +185,7 @@ window.onload = function() {
       $('#easTile').show();
       $('#esfTile').show();
       $('.period-status').text('R02 open');
+      $('.period-status-2').html('R02 open, R13 validation only');
       $('#esfTile .period-status').text('R02 is open');
       $('#viewReportsSubmittedButton').attr("href", "latest-submissions-overlapping.html");
       $('#returnPeriodName').text('Return period 13 (R13)');
@@ -232,7 +233,7 @@ window.onload = function() {
       $('#2').attr("href", "historical-in-period-overlapping");
       $('#easTile').show();
       $('#esfTile').show();
-      $('.period-status').text('R02 and R13 are open');
+      $('.period-status').text('R02 and R13 open');
       $('#esfTile .period-status').text('R02 is open');
       $('#viewReportsSubmittedButton').attr("href", "latest-submissions-overlapping.html");
       $('#returnPeriodName').text('Return period 13 (R13)');
@@ -257,6 +258,9 @@ window.onload = function() {
         $('#esfTile').show();
       }
     }
+
+
+    
 
     
       

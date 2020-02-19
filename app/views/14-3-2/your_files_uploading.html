@@ -1,0 +1,52 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+  <h2 class="govuk-heading-xl">
+    Processing...
+  </h2>
+
+  <section class="progress-container">
+    <p class="govuk-body govuk-!-font-size-16 file-name">	ILR-12345678-1819-20180806-05092018-02.XML</p>
+    <span class="govuk-body">
+      <span>25%</span>  
+      <span>File schema validation...</span> 
+    </span>
+    <div class="progress-bar">
+      <span class="progress"></span>
+    </div>
+  </section>
+
+	 <!-- <img src="/public/images/spinner-gif-13.gif"/> -->
+
+
+
+        <script type="text/javascript">
+    function Redirect()
+    {
+        window.location="./theres_a_problem.html";
+        // above url was ./ilr_data_submitted_clean //
+    }
+    setTimeout('Redirect()', 2000);
+</script>
+<br>
+
+<!-- <p><a href="cancel-processing">Cancel</a><br><br><a href="latest-submissions-v2">Back to reports</a></p> -->
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+
+</div>
+
+{% endblock %}

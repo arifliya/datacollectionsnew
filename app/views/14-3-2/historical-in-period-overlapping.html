@@ -1,0 +1,431 @@
+
+{% extends "./layout_backtowhat.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+ <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        
+
+
+
+
+ <div class="govuk-grid-row flex">
+
+    <div id="left-nav-wrapper" class="govuk-grid-column-one-quarter flex-grow-1"> 
+      {% include "./includes/left-nav.html" %}
+    </div>
+
+   <div class="govuk-grid-column-three-quarters flex-grow-1">
+
+    
+
+
+
+<!-- ------------------tab 2 history -------------------- -->
+
+<section class="">
+    <h2 class="govuk-heading-l" id="reports">Submission history</h2>
+    <p>Your final submission and period end reports.</p>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <span id="waste-hint" class="govuk-hint">
+          Filter by year
+        </span>
+        <div id="yearFilter" class="govuk-checkboxes govuk-checkboxes--small">
+          <div class="govuk-checkboxes__item">
+            <input id="19" class="govuk-checkboxes__input" name="waste" type="checkbox" value="19">
+            <label class="govuk-label govuk-checkboxes__label" for="19">
+              2019 to 2020
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input id="18" class="govuk-checkboxes__input" name="waste" type="checkbox" value="18">
+            <label class="govuk-label govuk-checkboxes__label" for="18">
+              2018 to 2019
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input id="17" class="govuk-checkboxes__input" name="waste" type="checkbox" value="17">
+            <label class="govuk-label govuk-checkboxes__label" for="17">
+              2017 to 2018
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input id="16" class="govuk-checkboxes__input" name="waste" type="checkbox" value="16">
+            <label class="govuk-label govuk-checkboxes__label" for="16">
+              2016 to 2017
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="year-groups 19">
+    <h3 class="govuk-heading-m">Academic year 2019 to 2020
+      <!-- <span class="govuk-caption-m">Download and view reports</span> -->
+    </h3>
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-visually-hidden">Return period and download</caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">Return period</th>
+            <th class="govuk-table__header" scope="col">Download</th>
+            <th class="govuk-table__header" scope="col"> </th>
+            
+            <th class="govuk-table__header" scope="col">View and download</th>
+            
+            
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+            
+            <!-- <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">R02</th>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+
+              <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+            </tr> -->
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">R01</th>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+
+              <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+<div class="year-groups 18">
+  <h3 class="govuk-heading-m">Academic year 2018 to 2019
+</h3>
+<table class="govuk-table">
+    <caption class="govuk-table__caption govuk-visually-hidden">Return period and download</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Return period</th>
+        <th class="govuk-table__header" scope="col">Download</th>
+        <th class="govuk-table__header" scope="col"> </th>
+        <th class="govuk-table__header" scope="col">View and download</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+        <!-- <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">R13</th>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+        </tr> -->
+        <tr class="govuk-table__row"></tr>
+          <th class="govuk-table__header" scope="row">R12</th>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">R11</th>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">R10</th>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="row">R09</th>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+          <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">R08</th>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+          </tr>
+            <th class="govuk-table__header" scope="row">R07</th>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">R06</th>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">R05</th>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="row">R04</th>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+            <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+          </tr>
+          <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">R03</th>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+            </tr>
+              <th class="govuk-table__header" scope="row">R02</th>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="row">R01</th>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+              <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+            </tr>
+            
+           
+    
+    </tbody>
+  </table>
+  
+</div>
+
+  <div class="year-groups 17">
+      <h3 class="govuk-heading-m">Academic year 2017 to 2018</h3>
+
+      <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-visually-hidden">Return period and download</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Return period</th>
+              <th class="govuk-table__header" scope="col">Download</th>
+              <th class="govuk-table__header" scope="col"> </th>
+              <th class="govuk-table__header" scope="col">View and download</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R14</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R13</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+                <th class="govuk-table__header" scope="row">R12</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R11</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R10</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R09</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R08</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                  <th class="govuk-table__header" scope="row">R07</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R06</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R05</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R04</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row">R03</th>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                  </tr>
+                    <th class="govuk-table__header" scope="row">R02</th>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row">R01</th>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                  </tr>
+                  
+                 
+          
+          </tbody>
+        </table>
+    
+        
+      
+  </div>
+
+  <div class="year-groups 16">
+      <h3 class="govuk-heading-m">Academic year 2016 to 2017</h3>
+
+      <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-visually-hidden">Return period and download</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Return period</th>
+              <th class="govuk-table__header" scope="col">Download</th>
+              <th class="govuk-table__header" scope="col"> </th>
+              <th class="govuk-table__header" scope="col">View and download</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R14</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R13</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+                <th class="govuk-table__header" scope="row">R12</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R11</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R10</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">R09</th>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+              </tr>
+              <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R08</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                  <th class="govuk-table__header" scope="row">R07</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R06</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R05</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R02" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="row">R04</th>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                  <td class="govuk-table__cell"><a href="/beta/summary/R01" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row">R03</th>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="/beta/summary/R05" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                  </tr>
+                    <th class="govuk-table__header" scope="row">R02</th>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="/beta/summary/R04" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                  </tr>
+                  <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="row">R01</th>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Submission reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="#" title="Download REPORTS-0312210-091400.zip">Period end reports.zip</a> <span class="govuk-body-s">(Zip, 1.3MB)</span> </td>
+                    <td class="govuk-table__cell"><a href="/beta/summary/R03" title="Download REPORTS-0312210-091400.zip">FM36 Apprenticeship breakdown</a></td>
+                  </tr>
+                  
+                 
+          
+          </tbody>
+        </table>
+    
+        
+      
+  </div>
+</section>
+
+
+
+</div>
+</div>
+
+<h3 class="govuk-heading-s">ESFA support desk</h3>
+<p>For help and support call us on 0370 267 0001, Monday to Thursday, 8:30am-5pm,<br> or Fridays, 8.30am-4pm. Or
+<!-- <a href="sde.servicedesk@education.gov.uk">sde.servicedesk@education.gov.uk</a></p> -->
+log a query on the <a target="blank" href="https://form.education.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-f9f4f5a1-936f-448b-bbeb-9dcdd595f468/AF-Stage-8aa41278-3cdd-45a3-ad87-80cbffb8b992/definition.json&redirectlink=%2Fen&cancelRedirectLink=%2Fen&consentMessage=yes">enquiry form</a>.</p>
+
+
+</div>
+
+</div>
+
+{% endblock %}
