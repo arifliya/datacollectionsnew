@@ -31,3 +31,17 @@ $govuk-global-styles: true;
 @import "components/taxon-banner";
 @import "components/information-banner";
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+
+.blue-box {
+    background-color: $govuk-link-colour;
+    padding: 10px;
+
+    span, a {
+    color: white;
+    }
+}
+
+.green-text {
+   color: govuk-colour("green");
+}
