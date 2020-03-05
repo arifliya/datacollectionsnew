@@ -124,12 +124,39 @@ window.onload = function() {
       $('#makeSubmission').hide();
     }
 
+    //******************* ORIGINAL VERSION *******************//
+
+    // if (data[0].journey == 'no-open-period') {
+    //   $('#returnPeriodStatus').text('R06 opens on 17 January 2020');
+    //   $('#ilrItnButton').attr("href", "./choose_file_to_upload_closed.html");
+    //   $('#easTile').hide();
+    //   $('#esfTile').hide();
+    //   $('.period-status').text('R06 validation only');
+    //   $('#returnPeriodName').text('Return Period 6 (R06)');
+    //   $('#returnOpeningTime').text('R06 opens on Friday 17 January 2020');
+    //   $('.period-title').text('Return period 6 is not open');
+    //   // $('#r06Table').hide();
+    //   $('#r06Header').text('R05');
+      
+
+    //   if (data[0].ilr == 'hide') {
+    //     $('#ilrTile').hide();
+    //   } else {
+    //     $('#ilrTile').show();
+    //   }
+    // }
+
+
     if (data[0].journey == 'no-open-period') {
       $('#returnPeriodStatus').text('R06 opens on 17 January 2020');
       $('#ilrItnButton').attr("href", "./choose_file_to_upload_closed.html");
-      $('#easTile').hide();
-      $('#esfTile').hide();
       $('.period-status').text('R06 validation only');
+      $('#easTile .warning-info').text('R06 closed');
+      $('#easTile a').attr("href", "what_data_do_you_want_to_submit_closed");
+      $('#esfTile .warning-info').text('Closed');
+      $('#esfTile a').attr("href", "what_data_do_you_want_to_submit_closed");
+      $('#easTile').show();
+      $('#esfTile').show();
       $('#returnPeriodName').text('Return Period 6 (R06)');
       $('#returnOpeningTime').text('R06 opens on Friday 17 January 2020');
       $('.period-title').text('Return period 6 is not open');
@@ -141,6 +168,18 @@ window.onload = function() {
         $('#ilrTile').hide();
       } else {
         $('#ilrTile').show();
+      }
+      
+      if (data[0].eas == 'hide') {
+        $('#easTile').hide();
+      } else {
+        $('#easTile').show();
+      }
+      
+      if (data[0].esf == 'hide') {
+        $('#esfTile').hide();
+      } else {
+        $('#esfTile').show();
       }
     }
 
