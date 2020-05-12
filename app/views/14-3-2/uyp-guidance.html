@@ -1,0 +1,84 @@
+{% extends "layout-summary.html" %}
+
+{% block header %}
+{% include "includes/cookie-banner.html" %}
+{# Set serviceName in config.js. #}
+{{ govukHeader({
+homepageUrl: "/",
+serviceName: serviceName,
+serviceUrl: "/",
+navigation: [
+{
+href: "/beta/summary/R01",
+text: "R01",
+active: true
+},
+{
+href: "/beta/summary/R02",
+text: "R02"
+},
+{
+href: "/beta/summary/R03",
+text: "R03"
+},
+{
+href: "/beta/summary/R04",
+text: "R04"
+}
+],
+containerClasses: "govuk-width-container"
+})
+}}
+
+
+{% endblock %}
+
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+<a href="#" class="govuk-back-link">Back</a>
+{% block content %}
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl" role="heading">
+                    Understand your payment guidance
+                </h1>
+
+                <h2 class="govuk-heading-m">Total earnings for this period</h2>
+                <p>The maximum calculated value of your learning delivery in the current period.
+                </p>
+                
+                <h2 class="govuk-heading-m">Earnings released from previous periods</h2>
+                <p>Earnings that are typically unlocked from a previous month they were not paid.
+                </p>
+                
+                <h2 class="govuk-heading-m">Data locks</h2>
+                <p>Data locks are caused by missing learner records on an ILR submission or where ILR information does not match the apprenticeship service.
+                </p>
+                
+                <h2 class="govuk-heading-m">Completion holdbacks</h2>
+                <p>An End Point Assessment has been completed but the required employer co-investment hasn’t been recorded on the ILR. The value represents the amount of completion earnings that have not been paid</p>
+
+                <h2 class="govuk-heading-m">Clawbacks</h2>
+                <p>Where earnings have gone down from a previous period, your payments are reduced as a result.
+                </p>
+
+                <h2 class="govuk-heading-m">Other/known issues</h2>
+                <p>Issues not caused by data lock, completion holdback, clawback or anything not listed on your summary. And you have not been paid enough to match your earnings.</p>
+
+                <h2 class="govuk-heading-m">ESFA planned payment</h2>
+                <p>Planned payments based on this ILR (does not include payments claimed from EAS) but calculated before considering the maximum contract values.</p>
+
+                <h2 class="govuk-heading-m">Co-investment payments to collect</h2>
+                <p>The proportion of your payment that must be provided by the employers, following the ESFA having made a coinvested payment.</p>
+
+                
+            </div>
+</div>   
+    </main>
+</div>
+
+{% endblock %}
