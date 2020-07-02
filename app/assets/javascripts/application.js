@@ -24,7 +24,7 @@ $('#typeFilter :checkbox').click(function () {
     $('#submissions tr').show()
     $('.card').show()
   }
-})
+}); 
 
 // ---------- history filters ------------ //
 
@@ -37,7 +37,7 @@ $('#yearFilter :checkbox').click(function () {
   if (!$('#yearFilter :checkbox').is(':checked')) {
     $('.year-groups').show()
   }
-})
+});
 
 // ---------- period end filters ------------ //
 
