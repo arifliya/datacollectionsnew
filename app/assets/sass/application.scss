@@ -45,3 +45,8 @@ $govuk-global-styles: true;
 .green-text {
    color: govuk-colour("green");
 }
+
+
+.govuk-table__header--numeric, .govuk-table__cell--numeric {
+border-bottom: 1px solid #bfc1c3;
+}

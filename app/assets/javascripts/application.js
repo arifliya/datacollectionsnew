@@ -362,6 +362,16 @@ $(document).ready(function () {
      $('.left-navigation-2 li #5').addClass('active');
      $('.left-navigation-2 li #5').addClass('govuk-!-font-weight-bold');
   }
+  
+  if(window.location.href.indexOf("fm36") > -1) {
+     $('.left-navigation-2 li #6').addClass('active');
+     $('.left-navigation-2 li #6').addClass('govuk-!-font-weight-bold');
+  }
+  
+  if(window.location.href.indexOf("archive") > -1) {
+     $('.left-navigation-2 li #7').addClass('active');
+     $('.left-navigation-2 li #7').addClass('govuk-!-font-weight-bold');
+  }
 });
 
 
