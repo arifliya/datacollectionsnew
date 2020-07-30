@@ -48,7 +48,15 @@ $govuk-global-styles: true;
 
 
 .govuk-table__header--numeric, .govuk-table__cell--numeric {
-border-bottom: 1px solid #bfc1c3;
-padding-top: 10px;
-padding-bottom: 10px;
+    border-bottom: 1px solid #bfc1c3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+// .govuk-checkboxes--small .govuk-checkboxes__item {
+//     padding-left: 30px;
+// }
+
+.wrap {
+    flex-wrap: wrap;
 }

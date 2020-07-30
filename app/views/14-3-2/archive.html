@@ -27,11 +27,57 @@
 
       <h2 class="govuk-heading-l" id="reports">Reports archive</h2>
       
-      <p>Previous funding reports from successful submissions to the Hub.</p>
-      
+      <p>Your previous funding reports from successful submissions on the Hub.</p>
+      <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <span id="waste-hint" class="govuk-hint">
+                Filter by year
+              </span>
+              <div id="yearFilter" class="govuk-checkboxes govuk-checkboxes--small wrap">
+                <div class="govuk-checkboxes__item third">
+                  <input id="19" class="govuk-checkboxes__input" name="waste" type="checkbox" value="19">
+                  <label class="govuk-label govuk-checkboxes__label" for="19">
+                    2019 to 2020
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="18" class="govuk-checkboxes__input" name="waste" type="checkbox" value="18">
+                  <label class="govuk-label govuk-checkboxes__label" for="18">
+                    2018 to 2019
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="17" class="govuk-checkboxes__input" name="waste" type="checkbox" value="17">
+                  <label class="govuk-label govuk-checkboxes__label" for="17">
+                    2017 to 2018
+                  </label>
+                </div>
+                
+                <div class="govuk-checkboxes__item">
+                  <input id="16" class="govuk-checkboxes__input" name="waste" type="checkbox" value="16">
+                  <label class="govuk-label govuk-checkboxes__label" for="16">
+                    2016 to 2017
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="16" class="govuk-checkboxes__input" name="waste" type="checkbox" value="15">
+                  <label class="govuk-label govuk-checkboxes__label" for="15">
+                    2015 to 2016
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input id="16" class="govuk-checkboxes__input" name="waste" type="checkbox" value="14">
+                  <label class="govuk-label govuk-checkboxes__label" for="14">
+                    2014 to 2015
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
               
               <div class="govuk-grid-row">
                   <div class="govuk-grid-column-three-quarters">
+                    <div class="year-groups 19">
                       <table id="customTable" class="govuk-table">
                           <caption class="govuk-table__caption govuk-heading-m">Reports for year 2018 to 2019</caption>
                           <thead class="govuk-table__head">
@@ -453,7 +499,9 @@
 
                           </tbody>
                       </table>
+                    </div>
 
+                    <div class="year-groups 18">
                       <table id="customTable" class="govuk-table">
                             <caption class="govuk-table__caption govuk-heading-m">Reports for year 2017 to 2018</caption>
                             <thead class="govuk-table__head">
@@ -494,7 +542,9 @@
                                    
                             </tbody>
                       </table>
+                    </div>
 
+                    <div class="year-groups 17">
                       <table id="customTable" class="govuk-table">
                             <caption class="govuk-table__caption govuk-heading-m">Reports for year 2016 to 2017</caption>
                             <thead class="govuk-table__head">
@@ -535,7 +585,9 @@
                                    
                             </tbody>
                       </table>
+                    </div>
 
+                    <div class="year-groups 16">
                       <table id="customTable" class="govuk-table">
                             <caption class="govuk-table__caption govuk-heading-m">Reports for year 2015 to 2016</caption>
                             <thead class="govuk-table__head">
@@ -576,7 +628,9 @@
                                    
                             </tbody>
                       </table>
+                    </div>
 
+                    <div class="year-groups 15">
                       <table id="customTable" class="govuk-table">
                             <caption class="govuk-table__caption govuk-heading-m">Reports for year 2014 to 2015</caption>
                             <thead class="govuk-table__head">
@@ -617,7 +671,9 @@
                                    
                             </tbody>
                       </table>
+                    </div>
 
+                    <div class="year-groups 14">
                       <table id="customTable" class="govuk-table">
                             <caption class="govuk-table__caption govuk-heading-m">Reports for year 2013 to 2014</caption>
                             <thead class="govuk-table__head">
@@ -658,6 +714,7 @@
                                    
                             </tbody>
                       </table>
+                    </div>
                   </div>
               </div>
       
