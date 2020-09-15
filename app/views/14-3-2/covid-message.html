@@ -1,0 +1,88 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+<!-- <script src="/public/javascripts/tt.js"></script> -->
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-two-thirds">
+
+     <a id="backlink" href="#" class="govuk-back-link">Back</a>
+     <br>
+     <br>
+
+       <h1 class="govuk-heading-xl">Final (R14) Funding Claim 2019 to 2020</h1>
+    <p>Some words about what this page is about.</p>
+
+        <h2 class="govuk-heading-m">ESFA funded Adult Education Budget (non-procured) </h2>
+
+        
+        <ul class="govuk-list">
+          <li>
+            Contract value = £6,837,900.00 
+          </li>
+          <li>
+            Total delivery = £6,522,672.81
+          </li>
+          <li>
+            Total delivery = 95.39% of contract value
+          </li>
+        </ul>
+        
+        
+        <h2 class="govuk-heading-m">ESFA funded AEB 19-24 Traineeships (non-procured)</h2>
+
+        
+        <ul class="govuk-list">
+          <li>
+            Contract value = £2,176,746.00
+          </li>
+          <li>
+            Total delivery = £1,875,049.00
+          </li>
+          <li>
+            Total delivery =  86.14% of contract value
+          </li>
+        </ul>
+<br>
+<p>Please enter details on how you sought to deliver during the covid period, including enabling learners to complete their qualification, enrolling furloughed workers and delivering online and/or through existing sub-contractors.  </p>
+
+
+<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    
+    
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+        <label class="govuk-label govuk-checkboxes__label" for="waste">
+          I agree with my written information
+        </label>
+      </div>
+      
+    </div>
+
+  </fieldset>
+</div>
+
+
+</div>
+
+</div>
+
+
+<a href="final-year-claim-16-19.html" role="button" class="govuk-button">Continue</a>
+
+<!-- <p class="govuk-body"><a href="exit-survey.html" role="button" class="govuk-link">Log out</a></p> -->
+
+
+
+{% endblock %}
