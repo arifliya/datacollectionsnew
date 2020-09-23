@@ -3,6 +3,13 @@
 
 //Cheats - ignore me
 
+a:focus {
+  background-color: #ffdd00;
+  outline: 0;
+  border-bottom: 4px solid black;
+}
+
+
 .visually-hidden {visibility: hidden;}
 
 //Actual code - take with a pinch of salt, its a ptype y'all
@@ -474,9 +481,39 @@ progress::-moz-progress-bar { background: white; }
 
 #left-nav-wrapper {
 
-  ul {
+  ul.left-navigation-2 {
 
     margin-left: -11px;
+
+    li {
+      // margin-bottom: 16px;
+      
+
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 6px 0 6px 11px;
+      }
+
+      a.active {
+        border-left: 5px solid govuk-colour("blue");
+        margin-left: -4px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: govuk-colour("light-blue");
+      }
+
+      // a:visited {
+      //   color: $govuk-link-colour;
+      // }
+      a:focus {
+        text-decoration: none;
+        color: govuk-colour("black");
+      }
+    
+  }
 
     .dashboard-link  {
       margin-bottom: 10px;
@@ -549,34 +586,9 @@ progress::-moz-progress-bar { background: white; }
       }
     }
 
-    .left-navigation-2 {
+     
 
-      li {
-        // margin-bottom: 16px;
-        
-
-        a {
-          text-decoration: none;
-          display: block;
-          padding: 6px 0 6px 11px;
-        }
-
-        a.active {
-          border-left: 5px solid govuk-colour("blue");
-          margin-left: -4px;
-        }
-
-        a:hover {
-          text-decoration: underline;
-          color: govuk-colour("light-blue");
-        }
-
-        // a:visited {
-        //   color: $govuk-link-colour;
-        // }
-
-      }
-    }
+      
   }
 
   .app-back-to-top__icon, a:visited {
