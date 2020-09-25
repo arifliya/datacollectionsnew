@@ -3,11 +3,19 @@
 
 //Cheats - ignore me
 
-a:focus {
-  background-color: #ffdd00;
-  outline: 0;
-  border-bottom: 4px solid black;
+.govuk-link:focus, a:focus {
+  background-color: #fd0;
+  // outline: 0;
+  // border-bottom: 4px solid black;
+
+  outline: 3px solid transparent;
+  box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
 }
+
+// .govuk-link:focus, a:focus {
+
+// }
 
 
 .visually-hidden {visibility: hidden;}
@@ -509,8 +517,11 @@ progress::-moz-progress-bar { background: white; }
       //   color: $govuk-link-colour;
       // }
       a:focus {
-        text-decoration: none;
-        color: govuk-colour("black");
+        background-color: #fd0;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
+    outline: 0;
+    color: #000;
       }
     
   }

@@ -118,8 +118,9 @@
   }
 
   a:focus {
-    background-color: $govuk-focus-colour;
-    outline: 0;
+    background-color: #fd0;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
 
     span {
       color: black;
@@ -127,9 +128,9 @@
   }
   
   a.grey:focus {
-    background-color: $govuk-focus-colour;
-    outline: 0;
-    border: 1px solid $govuk-focus-colour;
+    background-color: #fd0;
+    box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+    text-decoration: none;
   }
 
 }
