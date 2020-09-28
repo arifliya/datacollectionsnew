@@ -60,3 +60,14 @@ $govuk-global-styles: true;
 .wrap {
     flex-wrap: wrap;
 }
+
+.govuk-file-upload {
+    width: 285px;
+}
+
+@include govuk-media-query($from: tablet) {
+    
+    .govuk-file-upload {
+        width: auto;
+        }
+}
