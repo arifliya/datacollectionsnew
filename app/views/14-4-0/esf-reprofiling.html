@@ -1,0 +1,1521 @@
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+<script src="/public/javascripts/tt.js"></script>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">ESF Reprofiling
+
+      <!-- <span class="govuk-caption-xl">Adult Funding Claim 2018/19</span> -->
+
+    </h1>
+  </div>
+</div>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <div class="govuk-grid-column-one-quarter sticky-side-bar">
+      <aside >
+        <h2 class="govuk-heading-m">Deliverables</h2>
+        <ul id="nav" class="govuk-list">
+          <li><a href="#aeb-np">Start and learning</a></li>
+          <li> <a href="#ls-p">Specification defined</a></li>
+          <li><a href="#allb">Progressions</a></li>
+        </ul>
+      </aside>
+    </div>
+
+
+    <div class="govuk-grid-column-three-quarters">
+
+      
+
+      <div id="aeb-np" class="govuk-grid-row wrapper">
+        <div class="govuk-grid-column-full">
+        <div>
+          <h3 class="govuk-heading-m">
+            Start and learning
+          </h3>
+        </div>
+          
+
+        <table class="govuk-table">
+
+          <thead class="govuk-table__head">
+
+            <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Name</th>
+              <th class="govuk-table__header" scope="col">Learner assessment and plan</th>
+              <th class="govuk-table__header" scope="col">Regulated learning</th>
+              <th class="govuk-table__header" scope="col">Non regulated learning</th>
+              <!-- <th class="govuk-table__header govuk-table__header--numeric" scope="col">Values</th> -->
+
+            </tr>
+          </thead>
+
+          <tbody class="govuk-table__body">
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">Number of participants</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">1051</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">Unit price</td>
+              <td class="govuk-table__cell  govuk-table__cell--numeric">£200</td>
+              <td class="govuk-table__cell  govuk-table__cell--numeric">-</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">Line total</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£210,200</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+            </tr>
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">April 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">May 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">June 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">40</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£22,854</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£4,200</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">July 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">55</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£23,429</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£4,200</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">August 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">22</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£5,144</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£113</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">September 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">198</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£70,874</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">-£4,013</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">October 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">113</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£51,203</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£75</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">November 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">119</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£46,009</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£150</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">December 2019</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">128</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£74,209</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">January 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">91</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">£98,099</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">£113</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">February 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">122</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">£65,593</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">£42</td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">March 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">163</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">£102,559</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">£1,006</td>
+            </tr>
+
+            <!--**************** APRIL 2020 *****************-->
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">April 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">May 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">June 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">July 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">August 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">September 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">October 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">November 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">December 2020</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">January 2021</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">February 2021</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">March 2021</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+
+            <!--**************** APRIL 2021 *****************-->
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">April 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">May 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">June 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">July 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">August 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">September 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">October 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">November 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">December 2022</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">January 2023</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">February 2023</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+            
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell" scope="row">March 2023</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+              <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+                
+
+        </div>
+      </div>
+
+      <!-- Adult claim section 2 -->
+
+      <div id="ls-p" class="govuk-grid-row wrapper">
+        <div class="govuk-grid-column-full">
+          <div >
+                <h2 class="govuk-heading-m">
+                  Specification defined
+                </h2>
+          </div>
+           
+
+          <table class="govuk-table">
+
+            <thead class="govuk-table__head">
+
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col">Name</th>
+                <th class="govuk-table__header" scope="col">Progressions within work</th>
+                <th class="govuk-table__header" scope="col">LEP agreed delivery plan</th>
+                <!-- <th class="govuk-table__header" scope="col">Non regulated learning</th> -->
+                <!-- <th class="govuk-table__header govuk-table__header--numeric" scope="col">Values</th> -->
+
+              </tr>
+            </thead>
+
+            <tbody class="govuk-table__body">
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">Number of participants</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">112</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">1</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">-</td> -->
+              </tr>
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">Unit price</td>
+                <td class="govuk-table__cell  govuk-table__cell--numeric">£250</td>
+                <td class="govuk-table__cell  govuk-table__cell--numeric">£20,000</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">-</td> -->
+              </tr>
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">Line total</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£28,000</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£20,000</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">-</td> -->
+              </tr>
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">April 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£0</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">May 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£0</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">June 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£4,200</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">July 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£4,200</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">August 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£113</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">September 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">-£4,013</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">October 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£75</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">November 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£150</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">December 2019</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric">£0</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">January 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">£113</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">February 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">£42</td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">March 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">0</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">£0</td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">£1,006</td> -->
+              </tr>
+
+              <!--**************** APRIL 2020 *****************-->
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">April 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">May 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">June 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">July 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">August 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">September 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">October 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">November 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">December 2020</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">January 2021</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">February 2021</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">March 2021</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+
+              <!--**************** APRIL 2021 *****************-->
+
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">April 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">May 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">June 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">July 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">August 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">September 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">October 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">November 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">December 2022</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">January 2023</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">February 2023</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell" scope="row">March 2023</td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td>
+                <!-- <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                  <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                </td> -->
+              </tr>
+
+            </tbody>
+          </table>
+
+              
+
+        </div>
+      </div>
+
+      <!-- Adult funding claim section 3 -->
+
+      <div id="allb" class="govuk-grid-row wrapper">
+          <div class="govuk-grid-column-full">
+            <div>
+                <h2 class="govuk-heading-m">
+                  Progressions
+                </h2>
+            </div>
+            
+            <table class="govuk-table">
+
+              <thead class="govuk-table__head">
+    
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="col">Name</th>
+                  <th class="govuk-table__header" scope="col">Progression paid employment (EMP)</th>
+                  <th class="govuk-table__header" scope="col">Progression education (EDU)</th>
+                  <th class="govuk-table__header" scope="col">Progression apprenticeship (EDU)</th>
+                  <th class="govuk-table__header" scope="col">Progression traineeship (EDU)</th>
+                  <!-- <th class="govuk-table__header govuk-table__header--numeric" scope="col">Values</th> -->
+    
+                </tr>
+              </thead>
+    
+              <tbody class="govuk-table__body">
+    
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">Number of participants</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">19</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">10</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                </tr>
+    
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">Unit price</td>
+                  <td class="govuk-table__cell  govuk-table__cell--numeric">£500</td>
+                  <td class="govuk-table__cell  govuk-table__cell--numeric">£500</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£600</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                </tr>
+    
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">Line total</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£9,500</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£6,000</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                </tr>
+    
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">April 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">May 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">June 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">July 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">August 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">September 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">October 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">November 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">December 2019</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">January 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">February 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">March 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric">£0</td>
+                </tr>
+    
+                <!--**************** APRIL 2020 *****************-->
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">April 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">May 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">June 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">July 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">August 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">September 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">October 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">November 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">December 2020</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">January 2021</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">February 2021</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">March 2021</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+    
+                <!--**************** APRIL 2021 *****************-->
+    
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">April 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">May 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">June 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">July 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">August 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">September 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">October 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">November 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">December 2022</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">January 2023</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">February 2023</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+                
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell" scope="row">March 2023</td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                  <td class="govuk-table__cell govuk-table__cell--numeric  ">
+                    <input class="govuk-input govuk-input--width-10 inner" id="width-10" name="width-10" type="text">
+                  </td>
+                </tr>
+    
+              </tbody>
+            </table>
+            
+
+           
+
+
+          
+
+
+
+          <!-- <a href="year-end-claim-16-19.html" role="button" class="govuk-link pagination">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path fill="currentColor" d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg>
+            <span class="next-link govuk-!-font-size-19">Next</span><br>
+            <span class="whats-next-link">16 - 19 Funding claim</span>
+          </a> -->
+
+        </div>
+      </div>
+
+      <a href="#" role="button" class="govuk-button">Save and continue</a>
+
+          <p class="govuk-body"><a href="saved-updates-esf.html" role="button" class="govuk-link">Save and finish later</a></p>
+
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

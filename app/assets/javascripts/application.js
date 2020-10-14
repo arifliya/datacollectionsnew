@@ -452,16 +452,16 @@ $('#periodClosedButton').click(function () {
  
 
 
-var distance = $('#left-nav-wrapper').offset().top,
-    $window = $(window);
+// var distance = $('#left-nav-wrapper').offset().top,
+//     $window = $(window);
 
-$window.scroll(function() {
-    if ( $window.scrollTop() >= distance ) {
-        $(".back-to-top").removeClass("hidden");
-    } else {
-      $(".back-to-top").addClass("hidden");
-  }
-});
+// $window.scroll(function() {
+//     if ( $window.scrollTop() >= distance ) {
+//         $(".back-to-top").removeClass("hidden");
+//     } else {
+//       $(".back-to-top").addClass("hidden");
+//   }
+// });
 
 
 $(window).scroll(function () {
@@ -483,16 +483,16 @@ $(window).scroll(function () {
   }
 }).scroll()
 
-var $window = $(window)
-// var distance = ($sticky.length) ? stickyOffset.top : 0
-var distance = $('.sticky').offset().top
-$window.scroll(function () {
-  if ($window.scrollTop() >= distance) {
-    $('.sticky').addClass('stuck')
-  } else {
-    $('.sticky').removeClass('stuck')
-  }
-})
+// var $window = $(window)
+// // var distance = ($sticky.length) ? stickyOffset.top : 0
+// var distance = $('.sticky').offset().top
+// $window.scroll(function () {
+//   if ($window.scrollTop() >= distance) {
+//     $('.sticky').addClass('stuck')
+//   } else {
+//     $('.sticky').removeClass('stuck')
+//   }
+// })
 
 
 

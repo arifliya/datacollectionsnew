@@ -1,0 +1,61 @@
+
+{% extends "./layout_backtowhat.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+  
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    	<div class="govuk-highlight-summary-yellow" aria-labelledby="error-summary-title" data-module="error-summary">
+			<h2 class="govuk-highlight-summary__title period-title" id="highlight-summary-title">
+				
+			</h2>
+			<div class="govuk-error-summary__body">
+			  <ul class="govuk-list govuk-error-summary__list">
+				<li>
+					<p>Files cannot be submitted until Friday 17 January 2020. <br> <br> You can download your error reports while the period is closed.</p>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+	
+		<h1 class="govuk-heading-xl">Problems with the data<span id="returnPeriodName" class="govuk-caption-xl"> </span></h1>
+
+		<p id="error"><span class="govuk-!-font-weight-bold">Total learners in file</span>: 3,893</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total errors</span>: 15 (affecting 14 learners)</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total warnings</span>: 2,291 (affecting 1,027 learners)</p>
+
+		
+		<p><a href="#">Download detailed report </a> (CSV, 78KB) showing all errors and warnings</p>
+       
+
+		<div class="govuk-warning-text">
+		  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+		  <strong class="govuk-warning-text__text">
+		    <span class="govuk-warning-text__assistive">Warning</span>
+		    You’ll only be paid for learners that do not have errors in their data.
+		  </strong>
+		</div>
+        
+        
+		
+		<!-- <a href="./ilr_data_submitted_closed.html" type="submit" class="govuk-button">
+	      Submit anyway
+	    </a> -->
+
+		<p><a href="./choose_file_to_upload_closed.html">Go back and upload an updated file</a></p>
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help.html" %}
+      </div>
+</div>
+
+{% endblock %}

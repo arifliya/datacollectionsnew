@@ -1,0 +1,44 @@
+{% extends "./layout.html" %}
+
+{% block beforeContent %}
+  {% include "./includes/back_choose_file_to_upload.html" %}
+{% endblock %}
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+		<h1 class="govuk-heading-xl">ILR file not submitted<span id="returnPeriodName" class="govuk-caption-xl"> </span></h1>
+
+        
+        <p class="govuk-!-font-weight-bold green-text">Your file does not have any errors.</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total learners in file</span>: 3,893 (This file has 20.00% less learners than the previous submission)</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total errors</span>: 0</p>
+
+		<p><span class="govuk-!-font-weight-bold">Total warnings</span>: 0</p>
+		
+
+            	
+
+		<a href="./ilr_data_submitted.html" type="submit" class="govuk-button">
+	      Submit
+	    </a>
+          <p><a href="./choose_file_to_upload.html">Go back and upload an updated file</a></p>
+
+
+    </div>
+	  <div class="govuk-grid-column-one-third">
+        {% include "./includes/sidebar_help_known_issues.html" %}
+      </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,136 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+Check your funding claim data
+{% endblock %}
+
+{% block content %}
+<!-- <script src="/public/javascripts/tt.js"></script> -->
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-two-thirds">
+
+     <a id="backlink" href="#" class="govuk-back-link">Back</a>
+     <br>
+     <br>
+
+       <h1 class="govuk-heading-xl">Final (R14) Funding Claim 2019 to 2020</h1>
+
+
+    <p id="passport-issued-error" class="govuk-error-message">
+      Some words about what this page is about.
+    </p>
+
+        <h2 class="govuk-heading-m">ESFA funded Adult Education Budget (non-procured) </h2>
+
+        
+        <ul class="govuk-list">
+          <li>
+            Contract value = £6,837,900.00 
+          </li>
+          <li>
+            Total delivery = £6,522,672.81
+          </li>
+          <li>
+            Total delivery = 95.39% of contract value
+          </li>
+        </ul>
+        
+        
+        <h2 class="govuk-heading-m">ESFA funded AEB 19-24 Traineeships (non-procured)</h2>
+
+        
+        <ul class="govuk-list">
+          <li>
+            Contract value = £2,176,746.00
+          </li>
+          <li>
+            Total delivery = £1,875,049.00
+          </li>
+          <li>
+            Total delivery =  86.14% of contract value
+          </li>
+        </ul>
+        
+        <h2 class="govuk-heading-m">Advanced Learner Loans Bursary</h2>
+
+        
+        <ul class="govuk-list">
+          <li>
+            Contract value = £2,532,900.00
+          </li>
+          <li>
+            Total delivery = £2,359,649.64
+          </li>
+          <li>
+            Total delivery = 93.16% of contract value
+          </li>
+        </ul>
+<br>
+
+
+  
+
+  
+
+  <!-- <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      
+      
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste">
+            I confirm that we sought to deliver during the Covid period, including enabling learners to complete their qualification, enrolling furloughed workers and delivering online and/or through existing sub-contractors, and can supply evidence for audit purposes.
+          </label>
+        </div>
+        
+      </div>
+  
+    </fieldset>
+  </div> -->
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <p>
+        I confirm that we sought to deliver during the Covid period, including enabling learners to complete their qualification, enrolling furloughed workers and delivering online and/or through existing sub-contractors, and can supply evidence for audit purposes.
+      </p>
+    </legend>
+    
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          No
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+</div>
+
+</div>
+
+
+
+<a href="final-year-claim-16-19.html" role="button" class="govuk-button">Save and continue</a>
+&nbsp &nbsp &nbsp
+<a href="saved-updates.html" role="button" class="govuk-button govuk-button--secondary">Save and finish later</a>
+
+
+
+
+
+{% endblock %}

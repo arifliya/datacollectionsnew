@@ -1,0 +1,397 @@
+
+{% extends "./layout_backtowhat.html" %}
+
+
+{% block pageTitle %}
+  Funding claim submissions
+{% endblock %}
+
+{% block content %}
+<script src="/public/javascripts/tt.js"></script>
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-two-thirds">
+
+
+
+       <h1 class="govuk-heading-xl">Funding claim submissions</h1>
+       
+       <h2 class="govuk-heading-m">2019 to 2020</h2>
+
+
+      <h3 class="govuk-heading-s">Year end (R08) Funding Claim 2019 to 2020</h3>
+      <p  class="flex space-between"> 
+        <span id="fcStatus"> </span>
+        <a id="reviewAndEdit" class="govuk-button" href="final-year-claim-adult.html">Review and edit</a> 
+      </p>
+      <hr>
+      <h3 class="govuk-heading-s">Mid Year (R06) Funding Claim 2019 to 2020</h3>
+      <p class="flex space-between">Last submitted: 13 February at 12:55pm <a href="final-year-sub-report.html">View submission</a> </p>
+      <hr>
+      <h3 class="govuk-heading-s">Final funding Claim 2019 to 2020</h3>
+      <p class="flex space-between">Last submitted: 30 October at 1:14pm <a href="final-year-sub-report.html">View submission</a> </p>
+
+<br><br>
+
+      <h2 class="govuk-heading-m">2018 to 2019</h2>
+
+
+      <h3 class="govuk-heading-s">Year end (R08) Funding Claim 2018 to 2019</h3>
+      <p class="flex space-between">Last submitted: 13 February at 12:55pm <a href="final-year-sub-report.html">View submission</a> </p>
+      <hr>
+      <h3 class="govuk-heading-s">Mid Year (R06) Funding Claim 2018 to 2019</h3>
+      <p class="flex space-between">Last submitted: 13 February at 12:55pm <a href="final-year-sub-report.html">View submission</a> </p>
+      <hr>
+      <h3 class="govuk-heading-s">Final funding Claim 2018 to 2019</h3>
+      <p class="flex space-between">Last submitted: 30 October at 1:14pm <a href="final-year-sub-report.html">View submission</a> </p>
+
+
+       <!-- <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Final year 2018 to 2019
+          </dt>
+          <dd id="fcStatus" class="govuk-summary-list__value">
+            
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a id="reviewAndEdit" class="govuk-button" href="final-year-claim-adult.html">
+              Review and edit
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Year end 2018 to 2019
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 02 Jan 2018 at 4.43pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-sub-report.html">
+              View submission
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Year end 2018 to 2019
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 01 Jan 2018 at 1.26pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-sub-report">
+              View submission
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Mid year 2018 to 2019
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 02 Jan 2018 at 4.43pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-sub-report">
+              View submission
+            </a>
+          </dd>
+        </div>
+       
+      </dl>
+
+
+       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Final year 2017 to 2018
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 02 Jan 2018 at 4.43pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-sub-report">
+              View submission
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Year end 2017 to 2018
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 02 Jan 2017 at 4.43pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-claim-adult.html">
+              View submission
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Year end 2017 to 2018
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 01 Jan 2017 at 1.26pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-sub-report">
+              View submission
+            </a>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key width40">
+            Mid year 2017 to 2018
+          </dt>
+          <dd  class="govuk-summary-list__value">
+            Last submitted: 02 Jan 2017 at 4.43pm
+          </dd>
+          <dd class="govuk-summary-list__actions width30">
+            <a  class="govuk-link" href="final-year-sub-report">
+              View submission
+            </a>
+          </dd>
+        </div>
+       
+      </dl> -->
+
+        
+
+        <!-- <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <h2 class="govuk-heading-m">Final year 2018/19</h2>
+          <div class="govuk-summary-list__row">
+
+            <dd id="fcStatus" class="govuk-summary-list__value">
+
+               
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a id="reviewAndEdit" class="govuk-button" href="final-year-claim-adult.html">
+                Review and edit
+              </a>
+            </dd>
+          </div>
+
+          
+          
+          
+          <h2 class="govuk-heading-m">Year end 2018/19</h2>
+          <div class="govuk-summary-list__row">
+            <dd class="govuk-summary-list__value">
+              Last submitted: 02 Jan 2018 at 4.43pm
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="final-year-sub-report">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+          
+
+          <h2 class="govuk-heading-m">Mid year 2018/19</h2>
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 02 Jan 2018 at 4.43pm
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="final-year-sub-report">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 21 Dec 2018 at 2.15pm
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="final-year-sub-report">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+         
+          <h2 class="govuk-heading-m">Final year 2017/18</h2>
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 02 Sept 2017 at 12.15pm
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+               Signed
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="final-year-sub-report">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 02 Sept 2017 at 10.23am
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+               Signed
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="final-year-sub-report">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+         
+          <h2 class="govuk-heading-m">Year end 2017/18</h2>
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 02 June 2017 at 12.15pm
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="final-year-sub-report">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 02 June 2017 at 10.23am
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="adult-submitted.html">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+          
+          <h3>Mid year claim 2017/18</h3>
+          <div class="govuk-summary-list__row">
+
+            <dd class="govuk-summary-list__value">
+              Last submitted: 21 January 2017 at 12.15pm
+            </dd>
+
+            <dd class="govuk-summary-list__value">
+
+
+            </dd>
+
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                View submission
+                <span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+        </dl> -->
+
+
+
+
+
+
+<!-- ------------------tab 2 -------------------- -->
+
+
+
+
+
+
+</div>
+<div class="govuk-grid-column-one-third">
+<aside class="interruption-card hidden">
+         <div class="data">
+    <span class="data-item bold-xlarge">4 days</span>
+    <p class="govuk-body-white">until <span class="govuk-!-font-weight-bold">year end closes</span> on Thursday 7 February at 6:00pm</p>
+  </div>
+</aside>
+
+<!-- <aside class="app-related-items" role="complementary">
+  <h2 class="govuk-heading-m" id="subsection-title">
+    More actions
+  </h2>
+  <nav role="navigation" aria-labelledby="subsection-title">
+    <ul class="govuk-list govuk-!-font-size-16">
+      <li>
+        <a class="govuk-link" href="dashboard">Submit another file type</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="latest-submissions">View ILR data</a>
+      </li>
+    </ul>
+  </nav>
+</aside> -->
+
+
+</div>
+</div>
+
+
+<!-- <a href="year-end-claim-adult.html" role="button" class="govuk-button">Enter or confirm data</a> -->
+
+<!-- <p class="govuk-body"><a href="exit-survey.html" role="button" class="govuk-link">Log out</a></p> -->
+
+
+
+{% endblock %}

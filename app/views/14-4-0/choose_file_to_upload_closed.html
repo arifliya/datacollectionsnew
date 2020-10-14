@@ -1,0 +1,53 @@
+
+{% extends "./layout.html" %}
+
+{% block beforeContent %}
+  {% include "./includes/back_what_data_do_you_want_to_submit.html" %}
+{% endblock %}
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-highlight-summary-yellow" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
+      <h2 class="govuk-highlight-summary__title period-title" id="highlight-summary-title">
+        
+      </h2>
+      <div class="govuk-highlight-summary__body">
+        <!-- <p>You will only be able to upload and validate your file.</p> -->
+        <p>You can still upload and validate your file while the period is closed.  <br> <br> Files cannot be submitted until Friday 17 January 2020.</p>
+      </div>
+    </div>
+    <form action="your_files_uploading" method="get" class="form">
+	  <h1 class="govuk-heading-xl">Choose file to upload <span id="returnPeriodName" class="govuk-caption-xl"> </span></h1>
+		<p>Before uploading your file you should make sure that:</p>
+		<ul class="govuk-list govuk-list--bullet">
+      <li>it’s in an XML or Zip format</li>
+			<li>the data it contains is as complete as possible</li>
+			<li>the data it contains is as accurate as possible</li>
+		</ul>
+	  <div class="govuk-form-group">
+      <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
+        Upload a file
+      </label>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      <input type="hidden" name="whattosubmit" value="#">
+    </div>
+	
+		<a href="your_files_uploading_closed.html" class="govuk-button">
+      Upload file
+    </a>
+  </form>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    {% include "./includes/sidebar_help_related.html" %}
+  </div>
+</div>
+
+{% endblock %}

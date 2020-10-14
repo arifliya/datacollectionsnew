@@ -1,0 +1,31 @@
+
+{% extends "./layout_noback_signedin.html" %}
+
+
+{% block pageTitle %}
+  Saved changes
+{% endblock %}
+
+{% block content %}
+<script src="/public/javascripts/tt.js"></script>
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">We've saved your updates</h1>
+
+    <p class="govuk-body">Remember to complete your claim by [dd mm yy]</p>
+
+    <a href="esf-reprofiling"  role="button" class="govuk-button">Continue submission</a> 
+
+    <!-- <a href="edit-data.html" role="button" class="govuk-button govuk-button--secondary">View previous submissions</a> -->
+
+    <!-- <p class="govuk-body"><a href="start.html" role="button" class="govuk-link">Log out</a></p> -->
+
+
+
+  </div>
+</div>
+
+{% endblock %}
