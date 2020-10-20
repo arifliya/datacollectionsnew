@@ -111,6 +111,10 @@ window.onload = function() {
       $('.interruption-card.hidden').show();
       $('#fcStatus').text('Open for submission');
       $('#reviewAndEdit').show();
+    } 
+      else if (data[0].fc == 'na') {
+      $('#fcTile').hide();
+      $('#fcTileView').hide();
     }
 
 
@@ -120,7 +124,7 @@ window.onload = function() {
       $('#reportsTile').show();
     }
 
-    if (data[0].ilr == 'hide' && data[0].eas == 'hide' && data[0].esf == 'hide' && data[0].fc == 'closed' ) {
+    if (data[0].ilr == 'hide' && data[0].eas == 'hide' && data[0].esf == 'hide' && data[0].esfr == 'hide' && data[0].fc == 'na' ) {
       $('#makeSubmission').hide();
     }
 
@@ -181,6 +185,12 @@ window.onload = function() {
       } else {
         $('#esfTile').show();
       }
+      
+      if (data[0].esfr == 'hide') {
+        $('#esfrTile').hide();
+      } else {
+        $('#esfrTile').show();
+      }
     }
 
     if (data[0].journey == '1-open-period') {
@@ -211,6 +221,12 @@ window.onload = function() {
         $('#esfTile').hide();
       } else {
         $('#esfTile').show();
+      }
+
+      if (data[0].esfr == 'hide') {
+        $('#esfrTile').hide();
+      } else {
+        $('#esfrTile').show();
       }
     }
  
@@ -261,6 +277,11 @@ window.onload = function() {
         $('#esfTile').show();
       }
       
+      if (data[0].esfr == 'hide') {
+        $('#esfrTile').hide();
+      } else {
+        $('#esfrTile').show();
+      }
     }
 
     if (data[0].journey == '2-open-periods') {
@@ -295,6 +316,12 @@ window.onload = function() {
         $('#esfTile').hide();
       } else {
         $('#esfTile').show();
+      }
+
+      if (data[0].esfr == 'hide') {
+        $('#esfrTile').hide();
+      } else {
+        $('#esfrTile').show();
       }
     }
 
