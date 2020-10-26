@@ -48,9 +48,10 @@
   .sticky-side-bar {
     position: sticky;
     top: 0;
-    top: 15px;
-    padding: 12px;
-    background-color: govuk-colour("grey-4");
+    // top: 15px;
+    padding: 0 0 0 0;
+    // padding-left: 0;
+    background-color: govuk-colour("white");
 
     a:visited {
       color: $govuk-link-colour;
