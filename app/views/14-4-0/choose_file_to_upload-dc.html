@@ -9,43 +9,151 @@
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-          <!-- <div class="govuk-highlight-summary" aria-labelledby="highlight-summary-title" role="alert" tabindex="-1" data-module="highlight-summary">
-            <h2 class="govuk-highlight-summary__title" id="highlight-summary-title">
-              Last file submitted on 13 September 2019 at 1:00pm
-            </h2>
-            <div class="govuk-highlight-summary__body">
-                <p>Jane Smith submitted file SUPPDATA-12345678-ESF-8976-20180806-151209.CSV</p><p> <a href="latest-submissions.html">View submission history</a></p>
-            </div>
-          </div> -->
+  <div class="govuk-grid-column-full">
 
-    <form action="your_files_uploading-dc" method="get" class="form">
-	  <h1 class="govuk-heading-xl">Choose a file to upload 
-      <!-- <span id="returnPeriodName" class="govuk-caption-xl">Return period 6 (R06) </span> -->
-    </h1>
-		<p>Before uploading your file you should make sure that:</p>
-		<ul class="govuk-list govuk-list--bullet">
-      <li>it’s in CSV format</li>
-			<li>the data it contains is as complete as possible</li>
-			<li>the data it contains is as accurate as possible</li>
-		</ul>
-	  <div class="govuk-form-group">
-      <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
-        Upload a file
-      </label>
-      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-      <input type="hidden" name="whattosubmit" value="{{ data['whattosubmit'] }}">
-    </div>
+      <form action="your_files_uploading-dc" method="get" class="form">
+          <h1 class="govuk-heading-xl">Devolved Contracts </h1>
+          <h2 class="govuk-heading-m">Choose a file to upload </h2>
+          <p>Before uploading your file you should make sure that:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>it’s in CSV format</li>
+            <li>the data it contains is as complete as possible</li>
+            <li>the data it contains is as accurate as possible</li>
+          </ul>
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
+              Upload a file
+            </label>
+            <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            <input type="hidden" name="whattosubmit" value="{{ data['whattosubmit'] }}">
+          </div>
+      
+          <button class="govuk-button">
+            Upload file
+          </button>
+        </form>
+         
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header govuk-width-15">Date</th>
+          <th scope="col" class="govuk-table__header">Submitted by</th>
+          <th scope="col" class="govuk-table__header">File</th>
+          <th scope="col" class="govuk-table__header">Return</th>
+          <th scope="col" class="govuk-table__header govuk-width-17">Status</th>
+          <th scope="col" class="govuk-table__header">Reports</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">20 January 2020 at 15:22pm</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A55</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+           
+          </td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">16 December 2019 at 8:00:12am</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A54</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+            
+          </td>
+          <td class="govuk-table__cell"><a href="#"></a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">14 November 2019 at 8:00:12am</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A53</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+          </td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">19 October 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A52</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+            </td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">18 September 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A51</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+            </td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">17 August 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A50</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+            </td>
+          <td class="govuk-table__cell"></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">15 July 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A49</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+            </td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">18 June 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A48</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+            </td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">23 May 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A48</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold"><span class="red-font">Job failed</span></td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">20  April 2019 at 1:00pm	</th>
+          <td class="govuk-table__cell">Jim RIAZ</td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contract-20200217-122234.csv</a></td>
+          <td class="govuk-table__cell">A47</td>
+          <td class="govuk-table__cell govuk-!-font-weight-bold">
+            <p class="green-font govuk-!-margin-bottom-1 govuk-!-font-weight-bold">Job finished</p>
+          </td>
+          <td class="govuk-table__cell"><a href="#">Devolved-contractRD-202001051533-validation-report-20200101120523.CSV</a></td>
+        </tr>
+        
 
-		<button class="govuk-button">
-      Upload file
-    </button>
-  </form>
+      </tbody>
+    </table>
+
+    
   </div>
 
-  <div class="govuk-grid-column-one-third">
-    {% include "./includes/sidebar_help_related.html" %}
-  </div>
+ 
 </div>
 
 {% endblock %}
