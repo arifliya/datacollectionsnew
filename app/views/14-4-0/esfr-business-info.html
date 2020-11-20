@@ -1,0 +1,37 @@
+
+{% extends "./layout.html" %}
+
+
+{% block pageTitle %}
+  Data Collections Transformation Prototype
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+         
+    <form action="your_files_uploading" method="get" class="form">
+	  <h1 class="govuk-heading-xl">Choose file to upload </h1>
+		<p>Download a word template from <a target="blank" href="https://www.gov.uk/write-business-plan">Gov.uk</a> and upload your business case.</p>
+		
+	  <div class="govuk-form-group">
+      <label class="govuk-label govuk-!-font-weight-bold" for="file-upload-1">
+        Upload a file
+      </label>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      <input type="hidden" name="whattosubmit" value="{{ data['whattosubmit'] }}">
+    </div>
+
+		<button class="govuk-button">
+      Upload file
+    </button>
+  </form>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    {% include "./includes/sidebar_help_related-dc.html" %}
+  </div>
+</div>
+
+{% endblock %}
