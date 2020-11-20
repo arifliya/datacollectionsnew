@@ -9,11 +9,11 @@
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-three-quarters">
 
       <form action="dc_data_submitted" method="get" class="form">
-          <h1 class="govuk-heading-xl">Devolved Contracts </h1>
-          <h2 class="govuk-heading-m">Choose a file to upload </h2>
+          <h1 class="govuk-heading-xl">Choose devolved contracts file to upload </h1>
+          
           <p>Before uploading your file you should make sure that:</p>
           <ul class="govuk-list govuk-list--bullet">
             <li>it’s in CSV format</li>
@@ -135,7 +135,10 @@
 
     
   </div>
-
+  
+  <div class="govuk-grid-column-one-quarter">
+      {% include "./includes/sidebar_help_related-dc.html" %}
+  </div>
  
 </div>
 

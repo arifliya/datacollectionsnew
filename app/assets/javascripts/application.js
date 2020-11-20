@@ -9,6 +9,11 @@ $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 })
 
+$("#backOnePage").click(function(event) {
+  event.preventDefault();
+  history.back(1);
+});
+
 // ****************************   DATA COLLECTIONS BETA JS *********************************************//
 
 // ---------- last 3 months filters ------------ //
